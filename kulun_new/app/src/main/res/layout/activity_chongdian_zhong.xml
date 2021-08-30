@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data></data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/text_white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/transparent">
+
+            <TextView
+                android:id="@+id/tv_back"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/back"
+                android:textColor="@color/text_white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="充电"
+                android:textColor="@color/text_white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/smartrefresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+<!--            <com.scwang.smartrefresh.layout.header.ClassicsHeader-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"></com.scwang.smartrefresh.layout.header.ClassicsHeader>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="下拉刷新"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center_horizontal">
+
+                    <com.kulun.energynet.ui.activity.chongdian.WaveProgress
+                        android:id="@+id/progress"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        app:darkWaveAnimTime="1000"
+                        app:darkWaveColor="@color/dark"
+                        app:lightWaveAnimTime="2000"
+                        app:lightWaveColor="#800de6e8"
+                        app:lightWaveDirect="R2L"
+                        app:lockWave="false"
+                        app:valueSize="35sp"
+                        app:waveHeight="30dp"
+                        app:waveNum="1" />
+
+                    <TextView
+                        android:id="@+id/tv_add_car"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:padding="10dp"
+                        android:text="添加车辆"
+                        android:textColor="@color/transparent"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/tv_refresh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="刷新"
+                        android:textColor="@color/transparent"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_select_car"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="选择充电车辆"
+                    android:textColor="@color/transparent"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="充电桩信息"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_stationname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_1"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="充电站"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_stationname"
+                        android:text="充电桩编号"
+                        android:layout_alignLeft="@+id/tv_stationname"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_chongdian_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_code"
+                        android:layout_alignLeft="@+id/tv_stationname"
+                        android:layout_marginTop="3dp"
+                        android:text="充电费"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_fuwu_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tv_chongdian_price"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="10dp"
+                        android:text="服务费"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_park"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_chongdian_price"
+                        android:layout_alignLeft="@id/tv_stationname"
+                        android:layout_marginTop="3dp"
+                        android:text="停车服务"
+                        android:textColor="@color/black"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="实时信息"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_dianliu"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_dianya"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_gonglv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/coupon_back" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="已充电量"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_dianliangyichong"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/transparent"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.3dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/coupon_back" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="充电时长"
+                            android:textColor="@color/black"
+                            />
+
+                        <Chronometer
+                            android:id="@+id/ch_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.3dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/coupon_back" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="电费合计"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_dianfei"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/transparent"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_chongdian_press"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/login_on"
+                        android:gravity="center"
+                        android:text="开始充电"
+                        android:textColor="@color/text_white"
+                        android:textSize="20sp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        />
+
+                </LinearLayout>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </LinearLayout>
+</layout>

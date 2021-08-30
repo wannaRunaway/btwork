@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/white_back"
+    >
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10元"
+        android:textColor="@color/red"
+        android:textSize="22sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/money"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="满35减10元优惠券"
+        android:id="@+id/shengyu"
+        android:textColor="@color/black"
+        android:layout_alignLeft="@id/money"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/money"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lingqu"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="35dp"
+        />
+</RelativeLayout>

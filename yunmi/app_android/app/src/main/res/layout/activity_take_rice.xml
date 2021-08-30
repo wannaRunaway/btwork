@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data></data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/takerice_back">
+
+        <include
+            android:id="@+id/include_header"
+            layout="@layout/layout_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/layout_bottom"
+            layout="@layout/layout_bottomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+        <include
+            android:id="@+id/layout_back"
+            layout="@layout/layout_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="280dp"
+            android:layout_height="320dp"
+            android:layout_marginLeft="1165dp"
+            android:layout_marginTop="340dp"
+            android:background="@drawable/takerice_back_green">
+
+            <ImageView
+                android:layout_width="126dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="77dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/takerice_tv" />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="90dp"
+                android:src="@drawable/takerice_qrcode" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="450dp"
+            android:layout_height="500dp"
+            android:layout_marginLeft="415dp"
+            android:layout_marginTop="260dp"
+            android:background="@drawable/takerice_back_green">
+
+            <ImageView
+                android:layout_width="177dp"
+                android:layout_height="29dp"
+                android:layout_marginLeft="51dp"
+                android:layout_marginTop="55dp"
+                android:src="@drawable/takerice_internet_code" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="351dp"
+                android:layout_height="61dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="116dp"
+                android:background="@drawable/tv_back"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                />
+
+            <ImageView
+                android:id="@+id/img_close"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="358dp"
+                android:layout_marginTop="135dp"
+                android:src="@drawable/img_close" />
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="113dp"
+                android:layout_height="49dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="226dp"
+                android:src="@drawable/text1" />
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="113dp"
+                android:layout_height="49dp"
+                android:layout_alignTop="@+id/img1"
+                android:layout_toRightOf="@+id/img1"
+                android:src="@drawable/text2" />
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="113dp"
+                android:layout_height="49dp"
+                android:layout_alignTop="@+id/img1"
+                android:layout_toRightOf="@+id/img2"
+                android:src="@drawable/text3" />
+
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="113dp"
+                android:layout_height="49dp"
+                android:layout_below="@+id/img1"
+                android:layout_alignLeft="@+id/img1"
+                android:src="@drawable/text4" />
+
+            <ImageView
+                android:id="@+id/img5"
+                android:layout_width="113dp"
+                android:layout_height="49dp"
+                android:layout_alignTop="@+id/img4"
+                android:layout_toRightOf="@+id/img4"
+                android:src="@drawable/text5" />
+
+            <ImageView
+                android:id="@+id/img6"
+                android:layout_width="113dp"
+                android:layout_height="49dp"
+                android:layout_alignTop="@+id/img4"
+                android:layout_toRightOf="@+id/img5"
+                android:src="@drawable/text6" />
+
+            <ImageView
+                android:id="@+id/img7"
+                android:layout_width="113dp"
+                android:layout_height="49dp"
+                android:layout_below="@+id/img4"
+                android:layout_alignLeft="@+id/img1"
+                android:src="@drawable/text7" />
+
+            <ImageView
+                android:id="@+id/img8"
+                android:layout_width="113dp"
+                android:layout_height="49dp"
+                android:layout_alignTop="@+id/img7"
+                android:layout_toRightOf="@+id/img7"
+                android:src="@drawable/text8" />
+
+            <ImageView
+                android:id="@+id/img9"
+                android:layout_width="113dp"
+                android:layout_height="49dp"
+                android:layout_alignTop="@+id/img7"
+                android:layout_toRightOf="@+id/img8"
+                android:src="@drawable/text9" />
+
+            <ImageView
+                android:id="@+id/img_clear"
+                android:layout_width="113dp"
+                android:layout_height="49dp"
+                android:layout_below="@+id/img7"
+                android:layout_alignLeft="@+id/img1"
+                android:src="@drawable/textclear" />
+
+            <ImageView
+                android:id="@+id/img0"
+                android:layout_width="113dp"
+                android:layout_height="49dp"
+                android:layout_alignTop="@+id/img_clear"
+                android:layout_toRightOf="@+id/img_clear"
+                android:src="@drawable/text0" />
+
+            <ImageView
+                android:id="@+id/img_confirm"
+                android:layout_width="113dp"
+                android:layout_height="49dp"
+                android:layout_alignTop="@+id/img_clear"
+                android:layout_toRightOf="@+id/img0"
+                android:src="@drawable/textconfirm" />
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

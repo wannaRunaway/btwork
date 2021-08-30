@@ -1,0 +1,20 @@
+# ninja log v5
+5	128	1611823794	build.ninja	a38997df5f1515fc
+5	3255	1611823797	CMakeFiles/hyperlpr.dir/src/Recognizer.cpp.o	5e479d588c78e0ab
+1	3263	1611823797	CMakeFiles/hyperlpr.dir/src/CNNRecognizer.cpp.o	5aa969df3152eafa
+1	3275	1611823797	CMakeFiles/hyperlpr.dir/src/FastDeskew.cpp.o	b563f62033c5bd4b
+3	3346	1611823797	CMakeFiles/hyperlpr.dir/src/PlateDetection.cpp.o	87edd0dd8058927f
+7	3385	1611823797	CMakeFiles/hyperlpr.dir/src/SegmentationFreeRecognizer.cpp.o	3cefe1fc1a7f8957
+2	3390	1611823797	CMakeFiles/hyperlpr.dir/src/FineMapping.cpp.o	a0a856c537f84fe0
+2	3461	1611823797	CMakeFiles/hyperlpr.dir/src/Pipeline.cpp.o	55227d322e90aba
+1	3476	1611823797	CMakeFiles/hyperlpr.dir/javaWarpper.cpp.o	a3a837fbf2a6e213
+4	3504	1611823797	CMakeFiles/hyperlpr.dir/src/PlateSegmentation.cpp.o	31f8a70b21b137b3
+3504	4321	1611823798	/Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libhyperlpr.so	df0821165fe7dd77
+4	113	1611882673	build.ninja	a38997df5f1515fc
+0	59	1611882755	build.ninja	a38997df5f1515fc
+0	56	1611884030	build.ninja	a38997df5f1515fc
+1	52	1611885047	build.ninja	a38997df5f1515fc
+0	115	1611912665	build.ninja	a38997df5f1515fc
+14	136	1612153598	build.ninja	a38997df5f1515fc
+9	115	1612157192	build.ninja	a38997df5f1515fc
+1	55	1612158860	build.ninja	a38997df5f1515fc

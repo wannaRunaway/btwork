@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+
+        <com.cengalabs.flatui.views.FlatTextView
+            android:id="@+id/tvBatteryIndex"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="换下电池编号"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            flatui:fl_textColor="fl_main"/>
+
+        <com.cengalabs.flatui.views.FlatEditText
+            android:id="@+id/etPrevBatteryCode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"
+            flatui:fl_fieldStyle="fl_box"
+            flatui:fl_theme="@array/grass"/>
+
+        <com.cengalabs.flatui.views.FlatButton
+            android:id="@+id/btn_scan_prev_bak"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="扫描"
+            android:textColor="@color/white"
+            flatui:fl_theme="@array/grass"
+            flatui:fl_touchEffect="fl_ripple"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_scan_prev"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/btn_scan_bg" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

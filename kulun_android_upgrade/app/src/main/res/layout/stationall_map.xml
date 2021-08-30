@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data></data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:id="@+id/re"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="西斗门"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:drawablePadding="5dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_address"
+                style="@style/text12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_name"
+                android:layout_alignLeft="@id/tv_name"
+                android:layout_marginTop="13dp"
+                android:text="创业园内"
+                android:layout_toLeftOf="@+id/tv_distance"
+                android:layout_marginRight="30dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                style="@style/text12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_address"
+                android:layout_alignLeft="@id/tv_name"
+                android:layout_marginTop="13dp"
+                android:drawableLeft="@mipmap/station_icon_phone"
+                android:text="15209603592"
+                android:layout_marginBottom="20dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_clock"
+                style="@style/text12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_phone"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/tv_phone"
+                android:drawableLeft="@mipmap/station_icon_clock"
+                android:drawablePadding="3dp"
+                android:text="9:00-21:00" />
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

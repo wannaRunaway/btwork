@@ -1,0 +1,27 @@
+com/google/zxing/client/android/camera/open/CameraFacing.java
+ com.google.zxing.client.android.camera.open.CameraFacing
+com/google/zxing/client/android/camera/CameraConfigurationManager.java
+ com.google.zxing.client.android.camera.CameraConfigurationManager
+ com.google.zxing.client.android.camera.CameraConfigurationManager$1
+com/google/zxing/client/android/camera/AutoFocusManager.java
+ com.google.zxing.client.android.camera.AutoFocusManager
+ com.google.zxing.client.android.camera.AutoFocusManager$1
+ com.google.zxing.client.android.camera.AutoFocusManager$AutoFocusTask
+com/QRCodeReaderView/BuildConfig.java
+ com.QRCodeReaderView.BuildConfig
+com/dlazaro66/qrcodereaderview/SimpleLog.java
+ com.dlazaro66.qrcodereaderview.SimpleLog
+com/dlazaro66/qrcodereaderview/QRToViewPointTransformer.java
+ com.dlazaro66.qrcodereaderview.QRToViewPointTransformer
+com/dlazaro66/qrcodereaderview/QRCodeReaderView.java
+ com.dlazaro66.qrcodereaderview.QRCodeReaderView
+ com.dlazaro66.qrcodereaderview.QRCodeReaderView$DecodeFrameTask
+ com.dlazaro66.qrcodereaderview.QRCodeReaderView$OnQRCodeReadListener
+com/google/zxing/client/android/camera/open/OpenCamera.java
+ com.google.zxing.client.android.camera.open.OpenCamera
+com/dlazaro66/qrcodereaderview/Orientation.java
+ com.dlazaro66.qrcodereaderview.Orientation
+com/google/zxing/client/android/camera/open/OpenCameraInterface.java
+ com.google.zxing.client.android.camera.open.OpenCameraInterface
+com/google/zxing/client/android/camera/CameraManager.java
+ com.google.zxing.client.android.camera.CameraManager

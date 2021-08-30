@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/main_head"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    android:background="@color/main_blue"
+    >
+    <!--android:background="@color/roboy_green_accent"-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         >
+
+        <Button
+            android:id="@+id/btn_left"
+            android:layout_width="@dimen/space"
+            android:layout_height="@dimen/space"
+            android:background="@drawable/exit"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/mini_space"
+            android:layout_marginLeft="0dp"
+            style="@style/Widget.AppCompat.Button.Borderless" />
+
+        <TextView
+            android:id="@+id/tvMainTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/app_name"
+            android:textSize="20sp"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>
+

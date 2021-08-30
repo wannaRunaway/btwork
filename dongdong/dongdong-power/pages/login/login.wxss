@@ -1,0 +1,17 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+}
+.input-cell input{
+    border-bottom: 1rpx solid #E4E4E4;
+    font-family: PingFang-SC-Regular;
+}
+.phone{
+    padding-top: 120rpx;
+    padding-bottom: 80rpx;
+}
+.operate-box{
+    margin-top: 80rpx;
+    padding: 0 120rpx;
+}

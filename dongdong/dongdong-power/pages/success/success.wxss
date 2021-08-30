@@ -1,0 +1,29 @@
+.success-container {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+}
+.success-box{
+    padding-top: 100rpx;
+}
+.success-box image{
+    width: 218rpx;
+    height: 186rpx;
+    margin-bottom: 50rpx;
+}
+.success-box-title{
+    font-size: 40rpx;
+    color: #000000;
+    font-family: PingFang-SC-Regular;
+    margin-bottom: 30rpx;
+}
+.success-box-txt{
+    font-size: 28rpx;
+    color: #ABABAB;
+    font-family: PingFang-SC-Regular;
+}
+
+.operate-box{
+    margin-top: 80rpx;
+    padding: 0 120rpx;
+}

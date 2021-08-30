@@ -1,0 +1,4 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@mipmap/recharge_selected_400" android:state_selected="true" />
+    <item android:drawable="@mipmap/recharge_normal_400" />
+</selector>

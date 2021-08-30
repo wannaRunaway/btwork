@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+    <data>
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/zhongliang_back">
+
+        <include
+            android:id="@+id/center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/center"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/xuanzenianmiliang"
+            android:layout_marginLeft="714dp"
+            android:layout_marginTop="241dp"
+            />
+<!--        <include-->
+<!--            android:id="@+id/layout_header"-->
+<!--            layout="@layout/layout_header"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="510dp"-->
+<!--            android:layout_height="200dp"-->
+<!--            android:layout_marginLeft="249dp"-->
+<!--            android:layout_marginTop="220dp"-->
+<!--            android:background="@drawable/img_selfcult_amount"-->
+<!--            android:gravity="center"-->
+<!--            >-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/text_selftcult_amount" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <include-->
+<!--            android:id="@+id/layout_bottomer"-->
+<!--            layout="@layout/layout_bottomer"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentBottom="true" />-->
+
+<!--        <include-->
+<!--            android:id="@+id/include_back"-->
+<!--            layout="@layout/layout_back"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            />-->
+
+        <ImageView
+            android:id="@+id/account1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="221dp"
+            android:layout_marginTop="486dp"
+            android:background="@drawable/account1"
+            />
+
+        <ImageView
+            android:id="@+id/account2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/account2"
+            android:layout_marginLeft="535dp"
+            android:layout_marginTop="486dp"
+            />
+        <ImageView
+            android:id="@+id/account3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/account3"
+            android:layout_marginLeft="848dp"
+            android:layout_marginTop="486dp"
+            />
+        <ImageView
+            android:id="@+id/account4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/account4"
+            android:layout_marginLeft="1162dp"
+            android:layout_marginTop="486dp"
+            />
+        <ImageView
+            android:id="@+id/account5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/account5"
+            android:layout_marginLeft="1475dp"
+            android:layout_marginTop="486dp"/>
+    </RelativeLayout>
+</layout>

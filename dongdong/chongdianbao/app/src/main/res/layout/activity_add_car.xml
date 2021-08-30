@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data></data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/content"
+        >
+
+        <include
+            android:id="@+id/layout_header"
+            layout="@layout/layout_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.btkj.chongdianbao.customizeView.ClearEditText
+            android:id="@+id/et_carplate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_header"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginRight="60dp"
+            android:hint="请输入车牌号"
+            android:background="@drawable/et_back"
+            android:textColor="@color/black"
+            android:textColorHint="#999999"
+            />
+
+        <ImageView
+            android:id="@+id/img_finish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_carplate"
+            android:layout_marginTop="40dp"
+            android:src="@mipmap/img_finish" />
+
+        <ImageView
+            android:id="@+id/img_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_finish"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/img_caradd_next" />
+    </RelativeLayout>
+</layout>

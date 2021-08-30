@@ -1,0 +1,93 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+apply plugin: 'eclipse'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId 'com.botann.charging.pad'
+//        applicationId 'com.botann.charging.pad.newformal'
+        minSdkVersion 15
+        targetSdkVersion 22
+        multiDexEnabled true
+        externalNativeBuild {
+            cmake {
+                cppFlags "-std=c++11"
+                arguments '-DANDROID_STL=gnustl_static'
+            }
+        }
+        ndk {
+            abiFilters 'armeabi-v7a'
+        }
+        signingConfigs {
+            release {
+                storeFile file("E:/xuediwork/FareAppCode/charging_pad.jks")
+                storePassword "btkj007"
+                keyAlias "charging_pad"
+                keyPassword "btkj007"
+            }
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    sourceSets.main {
+        jni.srcDirs = [] // This prevents the auto generation of Android.mkaa
+        jniLibs.srcDirs = ['libs', 'src/main/cpp/opencv342/sdk/native/libs']
+    }
+    externalNativeBuild {
+        cmake {
+            path 'src/main/cpp/CMakeLists.txt'
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+//    compile files('libs/alipay-sdk-java20161205110024.jar')
+    implementation files('libs/commons-logging-1.1.1.jar')
+//    compile files('libs/alipay-trade-sdk.jar')
+    implementation files('libs/pgyer_sdk_2.8.3.jar')
+    implementation 'com.android.support:support-v4:26.1.0'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'org.greenrobot:greendao:3.1.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    implementation 'com.google.code.gson:gson:2.6.2'
+    implementation 'com.squareup.okhttp3:okhttp:3.4.2'
+//    compile 'com.dlazaro66.qrcodereaderview:qrcodereaderview:2.0.3'
+    implementation 'com.github.eluleci:flatui:3.0.0'
+    implementation 'com.wdullaer:materialdatetimepicker:3.1.0'
+    implementation 'com.github.paolorotolo:expandableheightlistview:1.0.0'
+//    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.jcodecraeer:xrecyclerview:1.3.2'
+    implementation 'com.kaopiz:kprogresshud:1.0.5'
+    implementation 'com.google.zxing:core:3.3.0'
+    implementation 'com.jakewharton:butterknife:7.0.1'
+    annotationProcessor 'com.jakewharton:butterknife:7.0.1'
+    implementation project(path: ':openCVLibrary342')
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-14'
+    implementation project(path: ':qrcodereaderview')
+    implementation 'com.android.support:multidex:1.0.1'
+    //    compile 'com.pgyersdk:sdk:2.8.1'
+    //    compile project(path: ':libEasyPR')
+}

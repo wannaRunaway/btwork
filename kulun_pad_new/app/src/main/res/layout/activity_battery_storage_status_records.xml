@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <include
+        layout="@layout/toolbar_back"
+        android:id="@+id/include" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/main_head"
+        >
+
+        <TextView
+            android:id="@+id/tv_battery_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="电池编号"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/common_text_color"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.00"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="电池容量(A.H)"
+            android:textColor="@color/common_text_color" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="时间"
+            android:textColor="@color/common_text_color" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="备注"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/common_text_color"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="电池状态"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/common_text_color"/>
+    </LinearLayout>
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/recycler_view"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_marginTop="85dp"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" />
+
+</android.support.design.widget.CoordinatorLayout>
+

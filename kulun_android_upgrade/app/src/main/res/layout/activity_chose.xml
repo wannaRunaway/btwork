@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data></data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/layout_header_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/t1"
+            style="@style/text14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="20dp"
+            android:text="定位城市" />
+
+        <TextView
+            android:id="@+id/city_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t1"
+            android:layout_alignLeft="@id/t1"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="@color/text_color"
+            android:background="@drawable/station_item1"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/t2"
+            style="@style/text14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/city_select"
+            android:layout_alignLeft="@id/t1"
+            android:layout_marginTop="30dp"
+            android:text="已开通的城市"
+            android:textSize="14sp" />
+
+        <com.scwang.smart.refresh.layout.SmartRefreshLayout
+            android:id="@+id/smart_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/t2"
+            android:layout_marginTop="20dp"
+            >
+            <GridView
+                android:id="@+id/gridview"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="3"></GridView>
+        </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+    </RelativeLayout>
+</layout>

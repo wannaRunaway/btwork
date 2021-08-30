@@ -1,0 +1,8 @@
+ninja: Entering directory `/Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/.cxx/cmake/debug/armeabi-v7a'
+[0/1] Re-running CMake...
+-- OpenCV libraries: opencv_highgui;opencv_features2d;opencv_shape;opencv_imgcodecs;opencv_ml;opencv_videoio;opencv_dnn;opencv_flann;opencv_objdetect;opencv_core;opencv_calib3d;opencv_video;opencv_superres;opencv_photo;opencv_imgproc;opencv_stitching;opencv_videostab
+-- My sources: ./javaWarpper.cpp;./src/CNNRecognizer.cpp;./src/FastDeskew.cpp;./src/FineMapping.cpp;./src/Pipeline.cpp;./src/PlateDetection.cpp;./src/PlateSegmentation.cpp;./src/Recognizer.cpp;./src/SegmentationFreeRecognizer.cpp
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/.cxx/cmake/debug/armeabi-v7a
+ninja: no work to do.

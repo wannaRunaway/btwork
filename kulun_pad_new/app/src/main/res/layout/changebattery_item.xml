@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--时间-->
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:text="获取中..."
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/common_text_color"
+            android:textSize="12sp"
+            />
+
+        <!--车牌-->
+        <TextView
+            android:id="@+id/tv_car_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="获取中..."
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/common_text_color"/>
+
+        <!--车型-->
+        <TextView
+            android:id="@+id/tv_carsize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="获取中..."
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/common_text_color"/>
+
+        <!--总里程-->
+        <TextView
+            android:id="@+id/tv_total_miles"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="获取中..."
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/common_text_color"/>
+
+        <!--行驶里程-->
+        <TextView
+            android:id="@+id/tv_cost_miles"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="获取中..."
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/common_text_color"/>
+
+        <!--共计-->
+        <TextView
+            android:id="@+id/tv_fee"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="获取中..."
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/common_text_color"/>
+
+        <!--优惠券-->
+        <TextView
+            android:id="@+id/tv_coupon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="获取中..."
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/common_text_color"/>
+
+        <!--实付-->
+        <TextView
+            android:id="@+id/tv_real_pay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="获取中..."
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/common_text_color"/>
+
+        <!--个人余额-->
+        <TextView
+            android:id="@+id/tv_balance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="获取中..."
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/common_text_color"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#dddddd" />
+
+</LinearLayout>

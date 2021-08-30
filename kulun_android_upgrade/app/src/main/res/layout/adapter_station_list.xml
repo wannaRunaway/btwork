@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/white_back"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/black"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_station"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:layout_alignBottom="@+id/tv_order"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_car_plate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_order"
+            android:layout_alignLeft="@+id/tv_order"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_order"
+            android:layout_alignRight="@+id/tv_station"
+            android:layout_alignBottom="@id/tv_car_plate"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_battery"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv_car_plate"
+            android:layout_alignLeft="@+id/tv_order"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_consume_bg"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="换上电池 6x15度"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/tv_soc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_car_plate"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/text_color"
+            android:layout_marginRight="10dp"
+            android:textSize="14sp"
+            android:layout_marginTop="13dp"
+            android:text="换下SOC：" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_battery"
+            android:layout_alignLeft="@+id/tv_order"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="实际支付/优惠券/余额  0/0/0"
+            android:textColor="#00d489"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/tv_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp">
+            <TextView
+                android:id="@+id/tv_apply"
+                android:layout_width="68dp"
+                android:layout_height="28dp"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:textColor="#ffffff"
+                android:background="@drawable/shape_greenbtn"
+                android:text="退款申请"
+                android:layout_marginBottom="20dp" />
+            <TextView
+                android:id="@+id/tv_refundfinish"
+                android:layout_width="68dp"
+                android:layout_height="28dp"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:textColor="#ffffff"
+                android:background="@drawable/shape_greenbtn"
+                android:layout_marginBottom="20dp"
+                android:text="已退款"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/tv_refundfail"
+                android:layout_width="68dp"
+                android:layout_height="28dp"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:textColor="#ffffff"
+                android:background="@drawable/shape_greenbtn"
+                android:layout_marginBottom="20dp"
+                android:text="未通过"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/tv_refunding"
+                android:layout_width="68dp"
+                android:layout_height="28dp"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:textColor="#ffffff"
+                android:background="@drawable/shape_greenbtn"
+                android:layout_marginBottom="20dp"
+                android:text="审核中"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

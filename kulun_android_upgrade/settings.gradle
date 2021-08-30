@@ -1,0 +1,2 @@
+include ':multi-image-selector'
+include ':app', ':qrcodereaderview'

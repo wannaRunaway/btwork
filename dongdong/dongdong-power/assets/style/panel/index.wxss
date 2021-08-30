@@ -1,0 +1,8 @@
+.tab-panel .title {
+  height: 84rpx;
+    line-height: 84rpx;
+    font-size: 24rpx;
+    color: #B1B6BF;
+    padding: 0 52rpx;
+    justify-content: space-between;
+}

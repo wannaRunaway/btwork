@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_back" />
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/layout_failure"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_marginTop="150dp"-->
+    <!--android:visibility="gone">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_result"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:src="@drawable/money" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_result"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:text="获取中..."-->
+    <!--android:textColor="#ff000000"-->
+    <!--android:textSize="24dp" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_jump"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginTop="30dp"-->
+    <!--android:text="跳转充值"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:background="@drawable/selector_main_blue_button"/>-->
+
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_account_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space"
+            android:gravity="center"
+            android:textColor="@color/common_text_color"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_success"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/big_space"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/middle_space"
+        android:paddingRight="@dimen/middle_space">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textColor="@color/common_text_color"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_recharge_amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="@color/common_text_color"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:layout_marginTop="@dimen/normal_space"
+            android:layout_marginBottom="@dimen/normal_space"
+            android:background="@color/line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="总里程"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/small_text_size" />
+
+            <TextView
+                android:id="@+id/tv_total_miles"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/small_text_size" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="个人余额"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/small_text_size" />
+
+            <TextView
+                android:id="@+id/tv_balance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/small_text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_space">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="行驶里程"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/small_text_size" />
+
+            <TextView
+                android:id="@+id/tv_trip_miles"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/small_text_size" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="优惠券"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/small_text_size" />
+
+
+            <TextView
+                android:id="@+id/tv_coupon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/small_text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_space">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="计费里程"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/small_text_size" />
+
+            <TextView
+                android:id="@+id/tv_charge_miles"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/small_text_size" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="共计"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/small_text_size" />
+
+
+            <TextView
+                android:id="@+id/tv_total_fee"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/small_text_size" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:layout_marginTop="@dimen/normal_space"
+            android:layout_marginBottom="@dimen/normal_space"
+            android:background="@color/line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/li_share"
+            android:visibility="visible"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="分账用户"
+                    android:textColor="@color/common_text_color"
+                    android:textSize="@dimen/small_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_fenzhangyonghu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textColor="@color/common_text_color"
+                    android:textSize="@dimen/small_text_size" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="需支付"
+                    android:textColor="@color/common_text_color"
+                    android:textSize="@dimen/small_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_fenzhangzhifu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textColor="@color/common_text_color"
+                    android:textSize="@dimen/small_text_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/normal_space">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="分账里程"
+                    android:textColor="@color/common_text_color"
+                    android:textSize="@dimen/small_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_fenzhanglicheng"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textColor="@color/common_text_color"
+                    android:textSize="@dimen/small_text_size" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="优惠券"
+                    android:textColor="@color/common_text_color"
+                    android:textSize="@dimen/small_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_youhuiquan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textColor="@color/common_text_color"
+                    android:textSize="@dimen/small_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+        <!--<CheckBox-->
+        <!--android:id="@+id/checkBox"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="自助换电优惠券"-->
+        <!--android:textColor="@color/main_blue"-->
+        <!--android:textSize="20sp"-->
+        <!--android:visibility="invisible"/>-->
+
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/middle_space"
+            android:paddingBottom="10dp">
+
+            <Button
+                android:id="@+id/btn_confirm"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/selector_main_blue_button"
+                android:text="确认扣款"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="@dimen/space"
+                android:layout_height="10dp"
+                android:layout_gravity="center" />
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/selector_gray_button"
+                android:text="取消"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

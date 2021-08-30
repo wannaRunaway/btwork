@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/message_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_black">
+
+<!--    <com.scwang.smartrefresh.layout.header.ClassicsHeader-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"></com.scwang.smartrefresh.layout.header.ClassicsHeader>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/message_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never" />
+
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

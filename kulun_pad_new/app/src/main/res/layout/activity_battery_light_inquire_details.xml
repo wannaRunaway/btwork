@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layout_header"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/main_blue">
+
+            <Button
+                android:id="@+id/btn_left"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="-10dp"
+                android:layout_marginLeft="-10dp"
+                android:drawableStart="@drawable/btn_back_bg"
+                android:drawableLeft="@drawable/btn_back_bg" />
+
+            <TextView
+                android:id="@+id/tvMainTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="-4dp"
+                android:layout_marginRight="-4dp"
+                android:background="@drawable/selector_pass_light_gray"
+                android:gravity="center"
+                android:text="接收"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_transfer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_header"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:text="移交站点:西站" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_transfer_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="150dp"
+            android:text="状态：已接收"
+            android:textColor="@color/main_blue"
+            />
+
+        <TextView
+            android:id="@+id/tv_transfer_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_transfer_name"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="移交时间：2018-11-22" />
+
+        <TextView
+            android:id="@+id/tv_accept_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_status"
+            android:layout_alignBottom="@+id/tv_transfer_time"
+            android:text="接收时间:2018-11-22 14:09"
+            android:textColor="@color/main_blue" />
+
+        <TextView
+            android:id="@+id/tv_accept_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_transfer_time"
+            android:layout_alignLeft="@+id/tv_transfer_time"
+            android:layout_marginTop="20dp"
+            android:text="接收站点：西站" />
+
+        <TextView
+            android:id="@+id/tv_carplate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_accept_name"
+            android:layout_alignLeft="@+id/tv_accept_name"
+            android:layout_marginTop="20dp"
+            android:text="运输车辆：浙A123456" />
+
+        <TextView
+            android:id="@+id/tv_remarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_carplate"
+            android:layout_alignLeft="@+id/tv_carplate"
+            android:layout_marginTop="20dp"
+            android:text="备注：备注内容" />
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_remarks"
+            android:layout_marginTop="40dp"
+            android:background="@color/snow_dark" />
+
+        <LinearLayout
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/view_line"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="电池类型"
+                android:textColor="@color/grape_dark"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="电池数量"
+                android:textColor="@color/grape_dark"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="电池电量"
+                android:textColor="@color/grape_dark"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerView"
+            android:layout_below="@+id/line"
+            ></android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+</layout>

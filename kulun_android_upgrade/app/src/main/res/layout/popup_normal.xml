@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/tv_startmonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="26dp"
+            android:text="起始时间"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/next"
+          android:layout_alignParentEnd="true"
+          android:layout_marginEnd="20dp"
+          android:text="下月"
+          android:background="@drawable/month_drawable"
+          android:paddingTop="5dp"
+          android:paddingBottom="5dp"
+          android:paddingLeft="13dp"
+          android:paddingRight="13dp"
+          android:layout_marginTop="15dp"
+          />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/next"
+            android:id="@+id/now"
+            android:text="本月"
+            android:background="@drawable/month_drawable"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:layout_toLeftOf="@+id/next"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:id="@+id/tv_buynum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_startmonth"
+            android:layout_alignLeft="@+id/tv_startmonth"
+            android:layout_marginTop="20dp"
+            android:text="购买数量"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/add"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tv_startmonth"
+            android:layout_alignRight="@+id/next"
+            android:layout_marginTop="10dp"
+            android:padding="6dp"
+            android:src="@mipmap/image_increase" />
+
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_buynum"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/add"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:id="@+id/minus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@id/add"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/num"
+            android:padding="6dp"
+            android:src="@mipmap/image_decrease" />
+
+        <RelativeLayout
+            android:id="@+id/re"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_buynum"
+            android:layout_alignLeft="@+id/tv_buynum"
+            android:layout_alignRight="@+id/next"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_correspond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="对应车辆"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:id="@+id/image_next_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/activity_right_arrow"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:id="@+id/carplate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/image_next_page"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/re"
+            android:layout_alignLeft="@id/tv_startmonth"
+            android:layout_alignRight="@+id/next"
+            android:layout_marginTop="20dp"
+            android:background="@color/reserverunfinish" />
+
+        <TextView
+            android:id="@+id/tv_cycle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:layout_alignLeft="@id/tv_startmonth"
+            android:layout_marginTop="20dp"
+            android:text="套餐周期"
+            android:textColor="@color/info"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/next"
+            android:layout_alignBottom="@+id/tv_cycle"
+            android:textSize="14sp"
+            android:textColor="@color/info"
+            />
+
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_cycle"
+            android:layout_alignLeft="@+id/tv_startmonth"
+            android:layout_marginTop="20dp"
+            android:text="费用明细"
+            android:textColor="@color/info"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/money_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/time"
+            android:layout_alignBottom="@+id/tv_total"
+            android:textColor="@color/info"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="费用总计"
+            android:textColor="@color/black"
+            android:layout_below="@id/money_info"
+            android:layout_marginTop="22dp"
+            android:layout_alignLeft="@id/tv_startmonth"
+            android:textSize="14sp"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/money_info"
+            android:layout_marginRight="10dp"
+            android:layout_alignRight="@+id/next"
+            android:textSize="18sp"
+            android:textColor="@color/text_color"
+            android:layout_marginTop="22dp"
+            android:text="600元"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/buy"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/money"
+            android:layout_marginTop="100dp"
+            android:background="@color/text_color"
+            android:gravity="center"
+            android:text="立即购买"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp"
+            />
+    </RelativeLayout>
+</RelativeLayout>

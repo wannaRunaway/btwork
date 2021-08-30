@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data></data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/error_background">
+
+        <include
+            android:id="@+id/center"
+            layout="@layout/center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="860dp"
+            android:layout_marginTop="281dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="787dp"
+            android:layout_marginTop="541dp"
+            android:text="稻谷余量不足，详情请联系客服"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+             />
+    </RelativeLayout>
+</layout>

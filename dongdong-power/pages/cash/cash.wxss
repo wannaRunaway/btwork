@@ -1,0 +1,34 @@
+/* pages/cash/cash.wxss */
+.cash-container{
+    display: flex;
+    flex-direction: column;
+}
+.cash-form{
+    padding: 0 60rpx;
+    padding-top: 40rpx;
+}
+.form-item{
+    padding: 40rpx 0;
+    border-bottom: 1px solid #E4E4E4 ;
+    font-family: PingFang-SC-Regular;
+    font-size: 28rpx;
+    color: #000000;
+}
+.required{
+    text-align: left;
+    width: 124rpx;
+}
+.form-item input{
+    color:#ABABAB;
+}
+
+.cash-form-bottom{
+    font-family: PingFang-SC-Regular;
+    font-size: 24rpx;
+    margin-top: 16rpx;
+    color: #ABABAB;
+}
+.operate-box{
+    margin-top: 70rpx;
+    padding: 0 120rpx;
+}

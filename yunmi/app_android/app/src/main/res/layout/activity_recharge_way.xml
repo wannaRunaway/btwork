@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data></data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/payway_back">
+
+        <include
+            android:id="@+id/include_header"
+            layout="@layout/layout_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/layout_bottom"
+            layout="@layout/layout_bottomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+        <include
+            android:id="@+id/bottom_back"
+            layout="@layout/layout_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="615dp"
+            android:layout_marginTop="280dp"
+            android:src="@drawable/icon_weichat" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="655dp"
+            android:layout_marginTop="510dp"
+            android:src="@drawable/text_weichat" />
+
+        <ImageView
+            android:id="@+id/img_wx"
+            android:layout_width="149dp"
+            android:layout_height="149dp"
+            android:layout_marginLeft="641dp"
+            android:layout_marginTop="587dp" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="1105dp"
+            android:layout_marginTop="280dp"
+            android:src="@drawable/icon_alipay" />
+
+        <ImageView
+            android:layout_width="149dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="1130dp"
+            android:layout_marginTop="510dp"
+            android:src="@drawable/text_alipay" />
+
+        <ImageView
+            android:id="@+id/img_ali"
+            android:layout_width="149dp"
+            android:layout_height="149dp"
+            android:layout_marginLeft="1131dp"
+            android:layout_marginTop="587dp"
+            />
+    </RelativeLayout>
+</layout>

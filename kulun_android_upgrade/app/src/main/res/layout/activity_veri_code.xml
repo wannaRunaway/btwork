@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:src="@mipmap/icon_close" />
+
+        <ImageView
+            android:id="@+id/img_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_code"
+            android:layout_alignLeft="@+id/tv_title"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="60dp"
+            android:src="@mipmap/img_login" />
+
+
+        <ImageView
+            android:id="@+id/img_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_login"
+            android:layout_alignLeft="@+id/tv_title"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="60dp"
+            android:src="@mipmap/img_new_register" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_close"
+            android:layout_gravity="center"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="45dp"
+            android:text="登录库仑能网"
+            android:textColor="#333333"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/tv_sms_receive"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/et_phone"
+            android:layout_alignRight="@+id/et_phone"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/get_sms"
+            android:text="获取短信验证码"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:gravity="center"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_login_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_register"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:text="手机号密码登录"
+            android:textColor="@color/black"
+            />
+
+        <com.kulun.energynet.customizeView.ClearEditText
+            android:id="@+id/et_code"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/et_phone"
+            android:layout_alignLeft="@+id/tv_title"
+            android:layout_marginTop="39dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/tv_sms_receive"
+            android:background="@drawable/et_back"
+            android:drawableRight="@drawable/delete_selector"
+            android:drawablePadding="5dp"
+            android:hint="请输入验证码"
+            android:inputType="number"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="#999999"/>
+
+        <com.kulun.energynet.customizeView.ClearEditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tv_title"
+            android:layout_alignLeft="@+id/tv_title"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/et_back"
+            android:drawableRight="@drawable/delete_selector"
+            android:drawablePadding="5dp"
+            android:hint="请输入手机号"
+            android:inputType="number"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="#999999"/>
+
+    </RelativeLayout>
+
+    <data></data>
+</layout>

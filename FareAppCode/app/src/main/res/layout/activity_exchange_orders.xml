@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/toolbar_back"
+        android:id="@+id/include" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/mini_gap"
+        android:padding="@dimen/mini_space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:clickable="true"
+            android:onClick="scan"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/btn_scan_blue"/>
+
+            <TextView
+                android:layout_marginLeft="@dimen/mini_space"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="扫码"
+                android:textSize="@dimen/normal_text_size"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/common_text_color"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:clickable="true"
+            android:id="@+id/li_scan_carplate"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/btn_scan_blue"/>
+
+            <TextView
+                android:layout_marginLeft="@dimen/mini_space"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="扫车牌"
+                android:textSize="@dimen/normal_text_size"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/common_text_color"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_station_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="换电站"
+            android:textSize="@dimen/normal_text_size"
+            android:textColor="@color/common_text_color" />
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="right"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<Button-->
+                <!--android:id="@+id/btn_change_battery"-->
+                <!--android:layout_width="60dp"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_height="35dp"-->
+                <!--android:text="去换电"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:background="@drawable/selector_main_blue_button"/>-->
+        <!--</LinearLayout>-->
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/dark_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mini_space"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="车牌"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/common_text_color"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="司机"
+            android:textColor="@color/common_text_color" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="账户余额"
+            android:textColor="@color/common_text_color"
+            android:padding="10dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="进站时间"
+            android:textColor="@color/common_text_color" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="等待时间(秒)"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/common_text_color"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="操作"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/common_text_color"/>
+    </LinearLayout>
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/recycler_view"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_marginTop="@dimen/mini_gap"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>

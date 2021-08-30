@@ -1,0 +1,118 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'org.greenrobot.greendao'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion '29.0.2'
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.kulun.energynet"
+        minSdkVersion 19
+        targetSdkVersion 26
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+        signingConfigs {
+            release {
+                storeFile file("/Users/xuedi/Downloads/kulun/kulun_android_upgrade/yuedian.jks")
+                storePassword "123456"
+                keyAlias "lansedadao1"
+                keyPassword "123456"
+            }
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    packagingOptions {
+        exclude 'assets/location_map_gps_locked.png'
+        exclude 'assets/location_map_gps_3d.png'
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug{
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main() {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'armeabi'//, 'x86_64'//只打包armeabi平台的，就算有其他文件夹也不管
+//            include 'armeabi'//, 'armeabi-v7a', 'arm64-v8a', 'mips', 'x86', 'x86_64'
+        }
+    }
+//    greendao {
+//        schemaVersion 4
+//        daoPackage'com.kulun.energynet.model'
+//        targetGenDir'src/main/java'
+//    }
+    dataBinding {
+        enabled = true
+    }
+    /*Gradle3.3 以上的方法*/
+    applicationVariants.all { variant ->
+        if (variant.buildType.name != "debug") {
+            variant.getPackageApplicationProvider().get().outputDirectory = new File(project.rootDir.absolutePath + "/apk")
+        }
+        variant.getPackageApplicationProvider().get().outputScope.apkDatas.forEach { apkData ->
+            apkData.outputFileName = ((project.name != "app") ? project.name : rootProject.name) + "-" +
+                    variant.versionName + "_" +
+                    variant.flavorName + "_" +
+                    variant.buildType.name + "_" +
+                    ".apk"
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation project(':multi-image-selector')
+    implementation project(path: ':qrcodereaderview')
+    implementation files('libs/commons-logging-1.1.1.jar')
+    implementation files('libs/butterknife-6.1.0.jar')
+    implementation files('libs/alipaySdk-15.6.8-20191021122455.aar')
+    implementation 'com.contrarywind:Android-PickerView:3.2.5'
+    implementation 'com.loopj.android:android-async-http:1.4.8'
+    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0'  //1.0.5及以前版本的老用户升级需谨慎，API改动过大
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0'  //没有使用特殊Header，可以不加这行
+    implementation 'com.github.eluleci:flatui:3.0.0'
+    implementation 'com.github.d-max:spots-dialog:0.7@aar'
+    implementation 'com.google.zxing:core:3.3.0'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.google.android.gms:play-services-appindexing:8.4.0'
+    implementation 'com.android.support:multidex:1.0.1'
+//    implementation files('libs/alipaySdk-20170922.jar')
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+    //    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.aliyun.dpa:oss-android-sdk:+'
+    implementation 'com.squareup.okio:okio:1.9.0'
+//    implementation 'com.qiyukf.unicorn:unicorn:+'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:percent:26.1.0'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.github.razerdp:BasePopup:2.1.7'
+    implementation 'com.amap.api:location:latest.integration'
+    implementation 'com.amap.api:map2d:latest.integration'
+//    implementation 'com.amap.api:navi-3dmap:latest.integration'
+//    、、com.amap.api:navi-3dmap:latest.integration
+    implementation 'com.github.limxing:Android-PromptDialog:1.1.3'
+}

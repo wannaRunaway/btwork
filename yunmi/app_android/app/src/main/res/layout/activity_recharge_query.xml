@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data></data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/pay_back">
+
+        <include
+            android:id="@+id/include_header"
+            layout="@layout/layout_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/layout_bottom"
+            layout="@layout/layout_bottomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+        <include
+            android:id="@+id/layout_back"
+            layout="@layout/layout_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/account100"
+            android:layout_width="200dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="258dp"
+            android:layout_marginTop="520dp"
+            android:src="@drawable/account_100" />
+
+        <ImageView
+            android:id="@+id/account200"
+            android:layout_width="200dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="559dp"
+            android:layout_marginTop="520dp"
+            android:src="@drawable/account_200" />
+
+        <ImageView
+            android:id="@+id/account500"
+            android:layout_width="200dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="860dp"
+            android:layout_marginTop="520dp"
+            android:src="@drawable/account_500" />
+
+        <ImageView
+            android:id="@+id/account_others"
+            android:layout_width="200dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="1161dp"
+            android:layout_marginTop="520dp"
+            android:src="@drawable/account_others" />
+
+        <ImageView
+            android:id="@+id/balance_inquire"
+            android:layout_width="200dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="1462dp"
+            android:layout_marginTop="520dp"
+            android:src="@drawable/balance_inquire" />
+        <RelativeLayout
+            android:layout_width="630dp"
+            android:layout_height="200dp"
+            android:background="@drawable/pay_select"
+            android:layout_marginTop="270dp"
+            android:layout_marginLeft="199dp"
+            >
+            <ImageView
+                android:layout_width="461dp"
+                android:layout_height="48dp"
+                android:src="@drawable/pay_select_tv"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

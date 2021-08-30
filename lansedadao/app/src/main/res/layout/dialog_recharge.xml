@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/text_white"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开始时间:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_start_time"
+                android:paddingLeft="5dp"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/normal_back"
+                android:gravity="center_vertical"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/l1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="结束时间:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_end_time"
+                android:paddingLeft="5dp"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/normal_back"
+                android:gravity="center_vertical"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/l2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_on"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/text_white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</LinearLayout>

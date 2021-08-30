@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data></data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/layout_header_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            />
+
+        <TextView
+            style="@style/text14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="账户余额（元）" />
+
+        <TextView
+            android:id="@+id/money"
+            style="@style/text28_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:text="0" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/divider_line"
+            android:layout_marginTop="20dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/quanbu"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全部日期"
+                style="@style/text12"
+                android:id="@+id/all"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="30dp">
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/text12"
+                    android:layout_centerInParent="true"
+                    android:text=""
+                    android:gravity="center"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/divider_line"
+                    android:layout_alignParentBottom="true"
+                    />
+                ></RelativeLayout>
+        <TextView
+            android:id="@+id/chaxun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text12"
+            android:textColor="@color/white"
+            android:text="查询"
+            android:background="@drawable/shape_textcolor"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="10dp"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20dp"
+            >
+            <com.contrarywind.view.WheelView
+                android:id="@+id/year"
+                android:layout_marginLeft="40dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                />
+            <com.contrarywind.view.WheelView
+                android:id="@+id/month"
+                android:layout_toRightOf="@id/year"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

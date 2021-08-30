@@ -1,0 +1,57 @@
+package com.btkj.chongdianbao.utils;
+import com.loopj.android.http.RequestParams;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+/**
+ * created by xuedi on 2019/8/1
+ */
+public class Customize {
+    public static final String ACCESS_KEY = "5ccba3d45c3d4bff86593eb008af9073";
+    public static final String NONCE = StringUtil.generateDefaultUsersName(); //不小于10位
+    public static final String SIGN = "sign";
+    public static final String SECRET_KEY = "487488cd45e144a1bb977ebc458d8b4a";
+    public static String getRequestParams(Map<String, String> map, RequestParams requestParams) {
+        List<String> list = new ArrayList<>();
+        Set<String> keySet = map.keySet();
+        Iterator<String> it = keySet.iterator();
+        while (it.hasNext()) {
+            String key = it.next();
+            String value = map.get(key);
+            list.add(key + "=" + value);
+            requestParams.add(key, value);
+        }
+        String timestamp = getTimestamp();
+        String nonce = RequestParamsCustomize.NONCE;
+        list.add("accessKey"+"="+RequestParamsCustomize.ACCESS_KEY);
+        list.add("timestamp"+"="+timestamp);
+        list.add("nonce"+"="+nonce);
+        requestParams.add("accessKey", RequestParamsCustomize.ACCESS_KEY);
+        requestParams.add("timestamp", timestamp);
+        requestParams.add("nonce", nonce);
+//        list.add("accessKey"+"="+"70e3752239c120f1561e9a3f95145e25");
+//        list.add("timestamp"+"="+"1555987801375");
+//        list.add("nonce"+"="+"ZYnzLDH20190423104941");
+//        requestParams.add("accessKey", "70e3752239c120f1561e9a3f95145e25");
+//        requestParams.add("timestamp", "1555987801375");
+//        requestParams.add("nonce", "ZYnzLDH20190423104941");
+        Collections.sort(list);
+        list.add("secretKey"+"="+SECRET_KEY);
+        StringBuilder stringBuilder = new StringBuilder();
+        for (Iterator<String> iterator = list.iterator(); iterator.hasNext(); ) {
+            stringBuilder.append(iterator.next());
+            if (iterator.hasNext()){
+                stringBuilder.append("&");
+            }
+        }
+        String encodeStr = MD5.encode(stringBuilder.toString());
+        return encodeStr.toUpperCase();
+    }
+
+    public static String getTimestamp(){
+        return String.valueOf(System.currentTimeMillis());
+    }
+}

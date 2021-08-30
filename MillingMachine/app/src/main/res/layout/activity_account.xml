@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data></data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/account_background">
+
+        <include
+            android:id="@+id/center"
+            layout="@layout/center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="696dp"
+            android:layout_height="170dp"
+            android:layout_marginLeft="142dp"
+            android:layout_marginTop="320dp"
+            android:background="@drawable/zuanshi_back">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="216dp"
+                android:layout_marginTop="39dp"
+                android:text="会员姓名"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="216dp"
+                android:layout_marginBottom="43dp"
+                android:text="手机号码"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="696dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="142dp"
+            android:layout_marginTop="531dp"
+            android:background="@drawable/yue_back"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/yue_drawable"
+                    android:text="余额"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/yellow"
+                    android:textSize="30dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/yue_drawable"
+                    android:text="折扣"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/yellow"
+                    android:textSize="30dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1143dp"
+            android:layout_marginTop="218dp"
+            android:src="@drawable/chongzijine" />
+
+        <ImageView
+            android:id="@+id/account100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1142dp"
+            android:layout_marginTop="267dp"
+            android:src="@drawable/account100" />
+
+        <ImageView
+            android:id="@+id/account200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/account100"
+            android:layout_marginLeft="22dp"
+            android:layout_toRightOf="@id/account100"
+            android:src="@drawable/account200" />
+
+        <ImageView
+            android:id="@+id/account300"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/account100"
+            android:layout_marginLeft="22dp"
+            android:layout_toRightOf="@id/account200"
+            android:src="@drawable/account300" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1143dp"
+            android:layout_marginTop="414dp"
+            android:src="@drawable/qitajinge" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="492dp"
+            android:layout_height="63dp"
+            android:layout_marginLeft="1142dp"
+            android:layout_marginTop="463dp"
+            android:background="@drawable/jinekuang"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            />
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="1141dp"
+            android:layout_marginTop="541dp"
+            android:src="@drawable/num1" />
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_alignBottom="@+id/img1"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/img1"
+            android:src="@drawable/num2" />
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_alignBottom="@+id/img1"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/img2"
+            android:src="@drawable/num3" />
+
+        <ImageView
+            android:id="@+id/img4"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_alignBottom="@+id/img1"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/img3"
+            android:src="@drawable/num4" />
+
+        <ImageView
+            android:id="@+id/img5"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_alignBottom="@+id/img1"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/img4"
+            android:src="@drawable/num5" />
+
+        <ImageView
+            android:id="@+id/shanchu"
+            android:layout_width="153dp"
+            android:layout_height="54dp"
+            android:layout_alignBottom="@+id/img1"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/img5"
+            android:src="@drawable/shanchu" />
+
+        <ImageView
+            android:id="@+id/img6"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="1141dp"
+            android:layout_marginTop="613dp"
+            android:src="@drawable/num6" />
+
+        <ImageView
+            android:id="@+id/img7"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_alignBottom="@+id/img6"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/img6"
+            android:src="@drawable/num7" />
+
+        <ImageView
+            android:id="@+id/img8"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_alignBottom="@+id/img6"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/img7"
+            android:src="@drawable/num8" />
+
+        <ImageView
+            android:id="@+id/img9"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_alignBottom="@+id/img6"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/img8"
+            android:src="@drawable/num9" />
+
+        <ImageView
+            android:id="@+id/img0"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_alignBottom="@+id/img6"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/img9"
+            android:src="@drawable/num0" />
+
+        <ImageView
+            android:id="@+id/qingchuquanbu"
+            android:layout_width="153dp"
+            android:layout_height="54dp"
+            android:layout_alignBottom="@+id/img6"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/img0"
+            android:src="@drawable/qingchuquanbu" />
+
+        <ImageView
+            android:id="@+id/chongzhi"
+            android:layout_width="492dp"
+            android:layout_height="63dp"
+            android:layout_marginLeft="1142dp"
+            android:layout_marginTop="731dp"
+            android:src="@drawable/querenchongzhi" />
+        <!--        <include-->
+        <!--            android:id="@+id/include_header"-->
+        <!--            layout="@layout/layout_header"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content" />-->
+
+        <!--        <include-->
+        <!--            android:id="@+id/layout_bottom"-->
+        <!--            layout="@layout/layout_bottomer"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentBottom="true" />-->
+
+        <!--        <include-->
+        <!--            android:id="@+id/layout_back"-->
+        <!--            layout="@layout/layout_back"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent" />-->
+
+        <!--        <RelativeLayout-->
+        <!--            android:layout_width="650dp"-->
+        <!--            android:layout_height="450dp"-->
+        <!--            android:layout_marginLeft="635dp"-->
+        <!--            android:layout_marginTop="280dp"-->
+        <!--            android:background="@drawable/account_back_green">-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/tv_name"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:textColor="@color/white"-->
+        <!--                android:textSize="45sp"-->
+        <!--                android:layout_marginLeft="58dp"-->
+        <!--                android:layout_marginTop="61dp"-->
+        <!--                android:gravity="center_vertical"-->
+        <!--                />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/tv_phone"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:textColor="@color/white"-->
+        <!--                android:textSize="45sp"-->
+        <!--                android:layout_marginLeft="58dp"-->
+        <!--                android:layout_marginTop="158dp"-->
+        <!--                android:gravity="center_vertical"-->
+        <!--                 />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/tv_balance"-->
+        <!--                android:layout_marginLeft="58dp"-->
+        <!--                android:layout_marginTop="256dp"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:textColor="@color/white"-->
+        <!--                android:textSize="45sp"-->
+        <!--                android:gravity="center_vertical"-->
+        <!--                />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/tv_discount"-->
+        <!--                android:layout_marginLeft="58dp"-->
+        <!--                android:layout_marginTop="353dp"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:textColor="@color/white"-->
+        <!--                android:textSize="45sp"-->
+        <!--                android:gravity="center_vertical"-->
+        <!--                />-->
+        <!--        </RelativeLayout>-->
+    </RelativeLayout>
+</layout>

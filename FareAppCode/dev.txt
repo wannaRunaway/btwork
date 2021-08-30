@@ -1,0 +1,10 @@
+一、正式测试版切换需要更改的内容：
+1. 请求服务器地址
+2. APP名称
+3. APP版本
+4. APPId
+    a.正式 com.botann.fareapp
+    b.测试 com.botann.fareapp.test
+    a.正式 com.botann.charging.pad
+    b.测试 com.botann.charging.pad.test
+5. 新版本上线 改数据库app版本

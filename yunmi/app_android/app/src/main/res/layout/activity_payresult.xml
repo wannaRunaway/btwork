@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data></data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/payresult_back"
+        android:id="@+id/content"
+        >
+        <com.btkj.millingmachine.viewutils.VideoViewFullScreen
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/videoview"
+            android:background="@android:color/transparent"
+            />
+        <RelativeLayout
+            android:id="@+id/re"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/img_background_bottom">
+
+            <TextView
+                android:id="@+id/tv_bottom_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="支付成功"
+                android:textColor="@color/white"
+                android:textSize="45sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

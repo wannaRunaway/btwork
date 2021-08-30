@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:filterTouchesWhenObscured="true"
+    android:fitsSystemWindows="true"
+    android:clickable="true"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/toolbar_back" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <com.cengalabs.flatui.views.FlatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="网点"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        flatui:fl_textColor="fl_main"/>
+
+                    <Spinner
+                        android:id="@+id/sp_station"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <com.cengalabs.flatui.views.FlatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="日报时间"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        flatui:fl_textColor="fl_main"/>
+
+                    <com.cengalabs.flatui.views.FlatEditText
+                        android:id="@+id/etReportDate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:inputType="numberDecimal"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:layout_marginRight="30dp"
+                        android:focusable="false"
+                        flatui:fl_fieldStyle="fl_box"
+                        flatui:fl_theme="@array/grass" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <com.cengalabs.flatui.views.FlatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="全天换电辆数"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        flatui:fl_textColor="fl_main"/>
+
+                    <com.cengalabs.flatui.views.FlatEditText
+                        android:id="@+id/etCarNoToday"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:layout_marginRight="30dp"
+                        flatui:fl_fieldStyle="fl_box"
+                        flatui:fl_theme="@array/grass"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <com.cengalabs.flatui.views.FlatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="统班换电辆数"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        flatui:fl_textColor="fl_main"/>
+
+                    <com.cengalabs.flatui.views.FlatEditText
+                        android:id="@+id/etCarNoClass"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:layout_marginRight="30dp"
+                        flatui:fl_fieldStyle="fl_box"
+                        flatui:fl_theme="@array/grass"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <com.cengalabs.flatui.views.FlatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="通宵班换电辆数"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        flatui:fl_textColor="fl_main"/>
+
+                    <com.cengalabs.flatui.views.FlatEditText
+                        android:id="@+id/etCarNoNight"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:layout_marginRight="30dp"
+                        flatui:fl_fieldStyle="fl_box"
+                        flatui:fl_theme="@array/grass"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <com.cengalabs.flatui.views.FlatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="通宵班充电节数"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        flatui:fl_textColor="fl_main"/>
+
+                    <com.cengalabs.flatui.views.FlatEditText
+                        android:id="@+id/etBatteryNoNight"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:layout_marginRight="30dp"
+                        flatui:fl_fieldStyle="fl_box"
+                        flatui:fl_theme="@array/grass"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <com.cengalabs.flatui.views.FlatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="站内电池总数"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        flatui:fl_textColor="fl_main"/>
+
+                    <com.cengalabs.flatui.views.FlatEditText
+                        android:id="@+id/etBatteryNoAll"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:layout_marginRight="30dp"
+                        flatui:fl_fieldStyle="fl_box"
+                        flatui:fl_theme="@array/grass"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <com.cengalabs.flatui.views.FlatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="时空白电池(F2)"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        flatui:fl_textColor="fl_main"/>
+
+                    <com.cengalabs.flatui.views.FlatEditText
+                        android:id="@+id/etBatteryNoSkyWhite"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:layout_marginRight="30dp"
+                        flatui:fl_fieldStyle="fl_box"
+                        flatui:fl_theme="@array/grass"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <com.cengalabs.flatui.views.FlatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="康迪电池数(D6)"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        flatui:fl_textColor="fl_main"/>
+
+                    <com.cengalabs.flatui.views.FlatEditText
+                        android:id="@+id/etBatteryNoKang"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:layout_marginRight="30dp"
+                        flatui:fl_fieldStyle="fl_box"
+                        flatui:fl_theme="@array/grass"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <com.cengalabs.flatui.views.FlatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="新增故障电池数"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        flatui:fl_textColor="fl_main"/>
+
+                    <com.cengalabs.flatui.views.FlatEditText
+                        android:id="@+id/etBatteryNoFailure"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:layout_marginRight="30dp"
+                        flatui:fl_fieldStyle="fl_box"
+                        flatui:fl_theme="@array/grass"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                   >
+
+                    <com.cengalabs.flatui.views.FlatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="备注"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        flatui:fl_textColor="fl_main"/>
+
+                    <com.cengalabs.flatui.views.FlatEditText
+                        android:id="@+id/etRemark"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:layout_marginRight="30dp"
+                        flatui:fl_fieldStyle="fl_box"
+                        flatui:fl_theme="@array/grass"/>
+                </LinearLayout>
+
+                <com.cengalabs.flatui.views.FlatButton
+                    android:id="@+id/btn_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_save"
+                    android:textColor="@color/white"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginEnd="30dp"
+                    flatui:fl_theme="@array/grass"
+                    flatui:fl_touchEffect="fl_ripple"/>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+</LinearLayout>

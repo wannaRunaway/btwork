@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        android:id="@+id/re_group"
+        >
+
+        <TextView
+            android:id="@+id/tv_car_plate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:drawableRight="@mipmap/mycar_sign_binding"
+            android:drawablePadding="10dp"
+            android:text="车牌号：浙A644CD"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_car_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_car_plate"
+            android:layout_alignLeft="@id/tv_car_plate"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="车型：ER200"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/coupon_back"
+        >
+
+        <ImageView
+            android:id="@+id/image_expired"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/img_expired"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/coupon_back_item"
+            >
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥20.00"
+                android:textColor="@color/text_white"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="36sp"
+                />
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="你充值，我送礼"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/text_white"
+                android:textSize="18sp"
+                android:layout_toRightOf="@+id/tv_money"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="50dp"
+                android:singleLine="true"
+                />
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="2919.20.12至20"
+                android:textColor="@color/text_white"
+                android:textSize="17sp"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

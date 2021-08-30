@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kulun.energynet"
+    android:versionCode="2"
+    android:versionName="1.0.1">
+
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <!-- 访问互联网权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCES_MOCK_LOCATION" />
+    <!-- GPS定位 -->
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <!-- SD卡读取权限，用户写入离线定位数据-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 摄影机 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--阿里云存储需要的权限-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!--  因为拍照需要写入文件 所以需要申请读取内存的权限 -->
+    <!--<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />-->
+    <!--摇一摇切换-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <application
+        android:name="com.kulun.energynet.MainApp"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <service android:name="com.amap.api.location.APSService"></service>
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="85ec83459c89cf6507678690ddae6d0f"></meta-data>
+        <!--        new  85ec83459c89cf6507678690ddae6d0f  old 3d76bc6e874c9f98d873fc8a019fefa9-->
+                <activity
+                    android:name=".ui.activity.SplashActivity"
+                    android:theme="@style/AppTheme.NoActionBar"
+                    android:windowSoftInputMode="stateHidden">
+                    <intent-filter>
+                        <action android:name="android.intent.action.MAIN" />
+                        <category android:name="android.intent.category.LAUNCHER" />
+                    </intent-filter>
+                </activity>
+        <activity android:name=".ui.activity.PayActivity" />
+        <activity android:name="com.kulun.energynet.ui.activity.PayResultActivity" />
+        <activity android:name="com.kulun.energynet.ui.activity.EvaluateActivity" />
+        <activity android:name="com.kulun.energynet.ui.activity.EvaluateDetailActivity" />
+        <activity android:name="com.kulun.energynet.ui.activity.QuestionActivity" />
+        <activity android:name="com.kulun.energynet.ui.activity.QuestionDetailActivity" />
+        <activity android:name="com.kulun.energynet.ui.activity.QuestionPhotoActivity" />
+        <activity
+            android:name="com.kulun.energynet.wxapi.WXPayEntryActivity"
+            android:launchMode="singleTop"
+            android:exported="true" />
+        <activity android:name="com.kulun.energynet.ui.activity.CouponActivity" />
+        <activity android:name="com.kulun.energynet.ui.activity.MessageActivity" />
+        <activity android:name="com.kulun.energynet.ui.activity.WebViewActivity" />
+        <activity android:name=".ui.activity.more.CustomerServiceActivity" />
+        <activity android:name=".ui.activity.more.MoreActivity" />
+        <activity android:name=".ui.activity.promotions.PromotionsActivity" />
+        <activity android:name=".ui.activity.promotions.PromotionDetailsActivity" />
+        <activity android:name=".ui.activity.promotions.PromotionsRecordActivity" />
+        <activity android:name=".ui.activity.ActivityCouponActivity" />
+        <activity android:name=".ui.activity.more.ChangePasswordActivity" />
+        <activity android:name=".ui.activity.login.ForgetPasswordActivity" />
+        <activity android:name=".ui.activity.login.NewuserRegisterActivity" />
+        <activity android:name=".ui.activity.login.QRScanActivity" />
+        <activity android:name=".ui.activity.login.SetPasswordActivity" />
+        <activity android:name=".ui.activity.GaoDeMapActivity" />
+        <activity android:name=".ui.activity.login.LoginActivity"></activity>
+        <activity android:name=".ui.activity.MainActivity" />
+        <activity android:name=".ui.activity.login.BindCarActivity" />
+        <activity android:name=".ui.activity.chongdian.ChongdianActivity" />
+        <activity android:name=".ui.activity.chongdian.ChongdianZhongActivity" />
+        <activity android:name=".ui.activity.more.PersonalActivity" />
+        <activity android:name=".ui.activity.PunchActivity" />
+        <activity android:name=".ui.activity.refund.ReFundChongdianActivity" />
+        <activity android:name=".ui.activity.refund.ReFundListActivity" />
+        <activity android:name=".ui.activity.login.ChongdianRegisterActivity" />
+        <activity android:name=".ui.activity.login.HuandianRegisterActivity" />
+        <activity android:name=".ui.activity.login.RegisterSelectActivity" />
+        <activity android:name=".ui.activity.login.UploadCarFinalActivity" />
+        <activity android:name=".ui.activity.login.UploadPhotoActivity"></activity>
+        <activity android:name=".ui.activity.login.UserprotocolActivity2" />
+        <activity
+            android:name=".ui.activity.login.UploadDriverCarInfoActivity"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+        <activity android:name=".ui.activity.login.UseProtocolActivity" />
+        <activity android:name=".ui.activity.login.PrivacyPolicyActivity" />
+        <activity android:name=".ui.activity.MyPlatelistActivity" />
+        <activity android:name=".ui.activity.refund.ReFundHuandianActivity" />
+        <activity android:name=".ui.activity.promotions.CountPromotionDetailsActivity" />
+        <activity android:name=".ui.activity.promotions.PriceDetailsAcrivity" />
+        <activity android:name=".ui.activity.promotions.HalfPriceDetailsActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <activity
+            android:name="com.amap.api.navi.AmapRouteActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.kulun.energynet.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+</manifest>

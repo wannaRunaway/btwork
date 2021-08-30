@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:id="@+id/tvNextBatteryCode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="换上电池编号"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:layout_weight="3"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_height="@dimen/common_edit_text_height">
+
+            <EditText
+                android:id="@+id/etNextBatteryCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:background="@drawable/selector_input"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:enabled="false"/>
+            <Button
+                android:id="@+id/btn_scan_next"
+                android:layout_alignRight="@+id/etNextBatteryCode"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="7dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/selector_scan_button"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+
+
+        <TextView
+            android:id="@+id/tvHighestVolt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="最高单体电压"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/etHighestSingleVoltage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:layout_weight="3"
+            android:gravity="left"
+            android:padding="10dp"
+            android:background="@drawable/selector_input"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+
+
+        <TextView
+            android:id="@+id/tvLowestVolt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="最高单体电压"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/etLowestSingleVoltage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:layout_weight="3"
+            android:gravity="left"
+            android:padding="10dp"
+            android:background="@drawable/selector_input"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+</LinearLayout>

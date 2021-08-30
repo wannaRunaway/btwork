@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="@color/text_blue"
+        >
+
+        <TextView
+            android:id="@+id/tv_cityname"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="正在定位.."
+            android:textColor="@color/text_white"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            >
+            <TextView
+                android:id="@+id/tv_huandian"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="换电站"
+                android:textColor="@color/text_white"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/tv_chongdian"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="充电站"
+                android:textColor="@color/text_white"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_showmap"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="显示地图"
+            android:textColor="@color/text_white"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpager"
+        ></androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>

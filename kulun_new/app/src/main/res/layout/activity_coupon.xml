@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data></data>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/coupon_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/text_white"
+            >
+
+            <ImageView
+                android:id="@+id/coupon_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:src="@drawable/button_back"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="50dp"
+                />
+
+            <TextView
+                android:id="@+id/top_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:text="@string/coupon"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="14dp"
+                android:textColor="@color/text_white" />
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/coupon_top"
+        android:id="@+id/re"
+        android:background="@color/text_white"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/can_receive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="可领取"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:id="@+id/line_receive"
+                android:layout_marginTop="7dp"
+                android:layout_width="80dp"
+                android:layout_height="2dp"
+                android:background="@color/text_white"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/can_use"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="可使用"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:id="@+id/line_use"
+                android:layout_marginTop="7dp"
+                android:layout_width="80dp"
+                android:layout_height="2dp"
+                android:background="@color/text_white"
+                />
+        </LinearLayout>
+        </LinearLayout>
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/re"
+      >
+    </FrameLayout>
+</RelativeLayout>
+</layout>

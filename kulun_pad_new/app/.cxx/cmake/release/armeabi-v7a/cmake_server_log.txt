@@ -1,0 +1,396 @@
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"supportedProtocolVersions":[{"isExperimental":true,"major":1,"minor":1}],"type":"hello"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Replacing toolchain '/Users/xuedi/Desktop/android-ndk-r14b/build/cmake/android.toolchain.cmake' with wrapper '/Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/.cxx/cmake/release/armeabi-v7a/pre-ndk-r15-wrapper-android.toolchain.cmake'
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {
+  "type": "handshake",
+  "cookie": "gradle-cmake-cookie",
+  "protocolVersion": {
+    "isExperimental": true,
+    "major": 1,
+    "minor": 1
+  },
+  "sourceDirectory": "/Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp",
+  "buildDirectory": "/Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/.cxx/cmake/release/armeabi-v7a",
+  "generator": "Ninja"
+}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"gradle-cmake-cookie","inReplyTo":"handshake","type":"reply"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {
+  "type": "configure",
+  "cacheArguments": [
+    "",
+    "-DCMAKE_CXX_FLAGS\u003d-std\u003dc++11",
+    "-DCMAKE_FIND_ROOT_PATH\u003d/Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/.cxx/cmake/release/prefab/armeabi-v7a/prefab",
+    "-DCMAKE_BUILD_TYPE\u003dRelease",
+    "-DCMAKE_TOOLCHAIN_FILE\u003d/Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/.cxx/cmake/release/armeabi-v7a/pre-ndk-r15-wrapper-android.toolchain.cmake",
+    "-DANDROID_ABI\u003darmeabi-v7a",
+    "-DANDROID_NDK\u003d/Users/xuedi/Desktop/android-ndk-r14b",
+    "-DANDROID_PLATFORM\u003dandroid-15",
+    "-DCMAKE_ANDROID_ARCH_ABI\u003darmeabi-v7a",
+    "-DCMAKE_ANDROID_NDK\u003d/Users/xuedi/Desktop/android-ndk-r14b",
+    "-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON",
+    "-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003d/Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/build/intermediates/cmake/release/obj/armeabi-v7a",
+    "-DCMAKE_MAKE_PROGRAM\u003d/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+    "-DCMAKE_SYSTEM_NAME\u003dAndroid",
+    "-DCMAKE_SYSTEM_VERSION\u003d15",
+    "-DANDROID_STL\u003dgnustl_static"
+  ]
+}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Check for working C compiler: /Users/xuedi/Desktop/android-ndk-r14b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Check for working C compiler: /Users/xuedi/Desktop/android-ndk-r14b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang
+CMAKE SERVER: Check for working C compiler: /Users/xuedi/Desktop/android-ndk-r14b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":33,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Check for working C compiler: /Users/xuedi/Desktop/android-ndk-r14b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang -- works","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Check for working C compiler: /Users/xuedi/Desktop/android-ndk-r14b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang -- works
+CMAKE SERVER: Check for working C compiler: /Users/xuedi/Desktop/android-ndk-r14b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang -- works
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting C compiler ABI info","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting C compiler ABI info
+CMAKE SERVER: Detecting C compiler ABI info
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":65,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting C compiler ABI info - done","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting C compiler ABI info - done
+CMAKE SERVER: Detecting C compiler ABI info - done
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting C compile features","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting C compile features
+CMAKE SERVER: Detecting C compile features
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":96,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":126,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":155,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting C compile features - done","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting C compile features - done
+CMAKE SERVER: Detecting C compile features - done
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Check for working CXX compiler: /Users/xuedi/Desktop/android-ndk-r14b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Check for working CXX compiler: /Users/xuedi/Desktop/android-ndk-r14b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++
+CMAKE SERVER: Check for working CXX compiler: /Users/xuedi/Desktop/android-ndk-r14b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":184,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Check for working CXX compiler: /Users/xuedi/Desktop/android-ndk-r14b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ -- works","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Check for working CXX compiler: /Users/xuedi/Desktop/android-ndk-r14b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ -- works
+CMAKE SERVER: Check for working CXX compiler: /Users/xuedi/Desktop/android-ndk-r14b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ -- works
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting CXX compiler ABI info","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting CXX compiler ABI info
+CMAKE SERVER: Detecting CXX compiler ABI info
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":211,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting CXX compiler ABI info - done","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting CXX compiler ABI info - done
+CMAKE SERVER: Detecting CXX compiler ABI info - done
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting CXX compile features","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting CXX compile features
+CMAKE SERVER: Detecting CXX compile features
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":237,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":262,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":287,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":311,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting CXX compile features - done","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting CXX compile features - done
+CMAKE SERVER: Detecting CXX compile features - done
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Found OpenCV: /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342 (found version \"3.4.2\") ","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Found OpenCV: /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342 (found version "3.4.2") 
+CMAKE SERVER: Found OpenCV: /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342 (found version "3.4.2") 
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"OpenCV libraries: opencv_highgui;opencv_features2d;opencv_shape;opencv_imgcodecs;opencv_ml;opencv_videoio;opencv_dnn;opencv_flann;opencv_objdetect;opencv_core;opencv_calib3d;opencv_video;opencv_superres;opencv_photo;opencv_imgproc;opencv_stitching;opencv_videostab","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: OpenCV libraries: opencv_highgui;opencv_features2d;opencv_shape;opencv_imgcodecs;opencv_ml;opencv_videoio;opencv_dnn;opencv_flann;opencv_objdetect;opencv_core;opencv_calib3d;opencv_video;opencv_superres;opencv_photo;opencv_imgproc;opencv_stitching;opencv_videostab
+CMAKE SERVER: OpenCV libraries: opencv_highgui;opencv_features2d;opencv_shape;opencv_imgcodecs;opencv_ml;opencv_videoio;opencv_dnn;opencv_flann;opencv_objdetect;opencv_core;opencv_calib3d;opencv_video;opencv_superres;opencv_photo;opencv_imgproc;opencv_stitching;opencv_videostab
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"My sources: ./javaWarpper.cpp;./src/CNNRecognizer.cpp;./src/FastDeskew.cpp;./src/FineMapping.cpp;./src/Pipeline.cpp;./src/PlateDetection.cpp;./src/PlateSegmentation.cpp;./src/Recognizer.cpp;./src/SegmentationFreeRecognizer.cpp","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: My sources: ./javaWarpper.cpp;./src/CNNRecognizer.cpp;./src/FastDeskew.cpp;./src/FineMapping.cpp;./src/Pipeline.cpp;./src/PlateDetection.cpp;./src/PlateSegmentation.cpp;./src/Recognizer.cpp;./src/SegmentationFreeRecognizer.cpp
+CMAKE SERVER: My sources: ./javaWarpper.cpp;./src/CNNRecognizer.cpp;./src/FastDeskew.cpp;./src/FineMapping.cpp;./src/Pipeline.cpp;./src/PlateDetection.cpp;./src/PlateSegmentation.cpp;./src/Recognizer.cpp;./src/SegmentationFreeRecognizer.cpp
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":1000,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Configuring done","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Configuring done
+CMAKE SERVER: Configuring done
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","type":"reply"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"type":"compute"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"compute","progressCurrent":1000,"progressMaximum":1000,"progressMessage":"Generating","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"compute","message":"Generating done","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Generating done
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"compute","message":"CMake Warning:\n  Manually-specified variables were not used by the project:\n\n    CMAKE_ANDROID_NDK\n\n","title":"Warning","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_ANDROID_NDK
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"compute","type":"reply"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"type":"cmakeInputs"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"buildFiles":[{"isCMake":true,"isTemporary":false,"sources":["/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystem.cmake.in","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInitialize.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Initialize.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCCompiler.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompiler.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine-C.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android/Determine-Compiler.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeFindBinUtils.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-FindBinUtils.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompiler.cmake.in","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCXXCompiler.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompiler.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine-CXX.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android/Determine-Compiler.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeFindBinUtils.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-FindBinUtils.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompiler.cmake.in","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInformation.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeGenericSystem.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Linux.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/UnixPaths.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCInformation.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/GNU.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-C.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCCompiler.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCompilerCommon.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompilerABI.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeParseImplicitLinkInfo.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompilerABI.c","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompileFeatures.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Internal/FeatureTesting.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompiler.cmake.in","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXInformation.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-CXX.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCXXCompiler.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCompilerCommon.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompilerABI.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeParseImplicitLinkInfo.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompileFeatures.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Internal/FeatureTesting.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompiler.cmake.in","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cmake","/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/FindPackageMessage.cmake"]},{"isCMake":false,"isTemporary":false,"sources":["CMakeLists.txt","../../../../../../android-ndk-r14b/build/cmake/android.toolchain.cmake","../../../../../../android-ndk-r14b/build/cmake/android.toolchain.cmake","opencv342/sdk/native/jni/OpenCVConfig-version.cmake","opencv342/sdk/native/jni/OpenCVConfig.cmake","opencv342/sdk/native/jni/abi-armeabi-v7a/OpenCVConfig.cmake","opencv342/sdk/native/jni/abi-armeabi-v7a/OpenCVModules.cmake","opencv342/sdk/native/jni/abi-armeabi-v7a/OpenCVModules-release.cmake"]},{"isCMake":false,"isTemporary":true,"sources":["../../../.cxx/cmake/release/armeabi-v7a/pre-ndk-r15-wrapper-android.toolchain.cmake","../../../.cxx/cmake/release/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake","../../../.cxx/cmake/release/armeabi-v7a/pre-ndk-r15-wrapper-android.toolchain.cmake","../../../.cxx/cmake/release/armeabi-v7a/CMakeFiles/3.10.2/CMakeCCompiler.cmake","../../../.cxx/cmake/release/armeabi-v7a/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake","../../../.cxx/cmake/release/armeabi-v7a/CMakeFiles/feature_tests.c","../../../.cxx/cmake/release/armeabi-v7a/CMakeFiles/feature_tests.c","../../../.cxx/cmake/release/armeabi-v7a/CMakeFiles/feature_tests.c","../../../.cxx/cmake/release/armeabi-v7a/CMakeFiles/3.10.2/CMakeCCompiler.cmake","../../../.cxx/cmake/release/armeabi-v7a/CMakeFiles/feature_tests.cxx","../../../.cxx/cmake/release/armeabi-v7a/CMakeFiles/feature_tests.cxx","../../../.cxx/cmake/release/armeabi-v7a/CMakeFiles/feature_tests.cxx","../../../.cxx/cmake/release/armeabi-v7a/CMakeFiles/feature_tests.cxx","../../../.cxx/cmake/release/armeabi-v7a/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake"]}],"cmakeRootDirectory":"/Users/xuedi/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10","cookie":"","inReplyTo":"cmakeInputs","sourceDirectory":"/Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp","type":"reply"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"type":"codemodel"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"configurations":[{"name":"Release","projects":[{"buildDirectory":"/Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/.cxx/cmake/release/armeabi-v7a","name":"Project","sourceDirectory":"/Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp","targets":[{"artifacts":["/Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/build/intermediates/cmake/release/obj/armeabi-v7a/libhyperlpr.so"],"buildDirectory":"/Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/.cxx/cmake/release/armeabi-v7a","fileGroups":[{"compileFlags":"-g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG -Os -DNDEBUG  -fPIC  ","defines":["hyperlpr_EXPORTS"],"includePath":[{"isSystem":true,"path":"/Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/jni/include"},{"isSystem":true,"path":"/Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/jni/include/opencv"},{"isSystem":true,"path":"/Users/xuedi/Desktop/android-ndk-r14b/sources/cxx-stl/gnu-libstdc++/4.9/include"},{"isSystem":true,"path":"/Users/xuedi/Desktop/android-ndk-r14b/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include"},{"isSystem":true,"path":"/Users/xuedi/Desktop/android-ndk-r14b/sources/cxx-stl/gnu-libstdc++/4.9/include/backward"}],"isGenerated":false,"language":"CXX","sources":["javaWarpper.cpp","src/CNNRecognizer.cpp","src/FastDeskew.cpp","src/FineMapping.cpp","src/Pipeline.cpp","src/PlateDetection.cpp","src/PlateSegmentation.cpp","src/Recognizer.cpp","src/SegmentationFreeRecognizer.cpp"]}],"fullName":"libhyperlpr.so","linkFlags":"-Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--fix-cortex-a8 -Wl,--no-undefined -Wl,-z,noexecstack -Qunused-arguments -Wl,-z,relro -Wl,-z,now -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--fix-cortex-a8 -Wl,--no-undefined -Wl,-z,noexecstack -Qunused-arguments -Wl,-z,relro -Wl,-z,now","linkLibraries":"-ljnigraphics /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/staticlibs/armeabi-v7a/libopencv_highgui.a /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/staticlibs/armeabi-v7a/libopencv_features2d.a /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/staticlibs/armeabi-v7a/libopencv_shape.a /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/staticlibs/armeabi-v7a/libopencv_imgcodecs.a /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/staticlibs/armeabi-v7a/libopencv_ml.a /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/staticlibs/armeabi-v7a/libopencv_videoio.a /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/staticlibs/armeabi-v7a/libopencv_dnn.a /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/staticlibs/armeabi-v7a/libopencv_flann.a /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/staticlibs/armeabi-v7a/libopencv_objdetect.a /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/staticlibs/armeabi-v7a/libopencv_core.a /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/staticlibs/armeabi-v7a/libopencv_calib3d.a /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/staticlibs/armeabi-v7a/libopencv_video.a /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/staticlibs/armeabi-v7a/libopencv_superres.a /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/staticlibs/armeabi-v7a/libopencv_photo.a /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/staticlibs/armeabi-v7a/libopencv_imgproc.a /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/staticlibs/armeabi-v7a/libopencv_stitching.a /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/staticlibs/armeabi-v7a/libopencv_videostab.a /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/3rdparty/libs/armeabi-v7a/liblibprotobuf.a /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/staticlibs/armeabi-v7a/libopencv_calib3d.a /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/staticlibs/armeabi-v7a/libopencv_features2d.a /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/staticlibs/armeabi-v7a/libopencv_highgui.a /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/staticlibs/armeabi-v7a/libopencv_videoio.a /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/staticlibs/armeabi-v7a/libopencv_imgcodecs.a /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/3rdparty/libs/armeabi-v7a/liblibjpeg-turbo.a /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/3rdparty/libs/armeabi-v7a/liblibwebp.a /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/3rdparty/libs/armeabi-v7a/liblibpng.a /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/3rdparty/libs/armeabi-v7a/liblibtiff.a /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/3rdparty/libs/armeabi-v7a/liblibjasper.a /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/3rdparty/libs/armeabi-v7a/libIlmImf.a /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/staticlibs/armeabi-v7a/libopencv_flann.a /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/staticlibs/armeabi-v7a/libopencv_video.a /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/staticlibs/armeabi-v7a/libopencv_photo.a /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/staticlibs/armeabi-v7a/libopencv_imgproc.a /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/staticlibs/armeabi-v7a/libopencv_core.a -lz /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/3rdparty/libs/armeabi-v7a/libtbb.a -lc /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/3rdparty/libs/armeabi-v7a/libcpufeatures.a -ldl -lm -llog /Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp/opencv342/sdk/native/3rdparty/libs/armeabi-v7a/libtegra_hal.a -lm \"/Users/xuedi/Desktop/android-ndk-r14b/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/libgnustl_static.a\"","linkerLanguage":"CXX","name":"hyperlpr","sourceDirectory":"/Users/xuedi/Desktop/xuediwork/kulun_pad_new/app/src/main/cpp","sysroot":"/Users/xuedi/Desktop/android-ndk-r14b/platforms/android-15/arch-arm","type":"SHARED_LIBRARY"}]}]}],"cookie":"","inReplyTo":"codemodel","type":"reply"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+

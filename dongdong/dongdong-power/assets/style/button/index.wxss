@@ -1,0 +1,37 @@
+.btn {
+    border: 0rpx solid transparent;
+    font-size: 36rpx;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10rpx;
+    height: 94rpx;
+    font-family: PingFang-SC-Regular;
+}
+
+.btn-default {
+  background:#00D489;
+}
+
+.btn-success {
+  background-color: #FC6936;
+}
+
+.btn-danger {
+   background-color: #FF5454;
+}
+
+.size-small {
+  border: none;
+  border-radius: 8rpx;
+  padding: 14rpx 0;
+  width: 180rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #FFFFFF;
+}
+
+.size-small text {
+  line-height: 28rpx;
+}

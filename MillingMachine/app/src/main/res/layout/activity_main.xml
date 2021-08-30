@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+    <data></data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_background_homepage"
+        tools:context=".homepage.MainActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_top_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="142dp"
+                android:layout_marginTop="107dp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="127dp"
+                android:layout_marginRight="155dp"
+                android:text="60s"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/daojishi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/time"
+                android:layout_toLeftOf="@+id/time"
+                android:drawableLeft="@drawable/clock"
+                android:text="倒计时："
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/bottom_icon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="142dp"
+                android:layout_marginTop="920dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="933dp"
+                android:layout_toRightOf="@+id/bottom_icon"
+                android:id="@+id/title"
+                android:textColor="@color/blue"
+                android:textSize="52dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="933dp"
+                android:layout_marginRight="171dp"
+                android:drawableLeft="@drawable/phone"
+                android:text="服务电话：55555555555"
+                android:textColor="@color/blue"
+                android:textSize="52dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1576dp"
+            android:layout_marginTop="799dp"
+            android:src="@drawable/back" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/mijia"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:src="@drawable/img_headrice" />
+
+            <TextView
+                android:id="@+id/tv_ricetoday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="38sp" />
+        </LinearLayout>
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="这是升级之后的安装包"-->
+        <!--android:textColor="@color/colorAccent"-->
+        <!--android:textSize="20sp"-->
+        <!--android:layout_marginTop="100dp"-->
+        <!--android:layout_marginLeft="100dp"-->
+        <!--/>-->
+
+        <ImageView
+            android:id="@+id/img_selfcult"
+            android:layout_width="257dp"
+            android:layout_height="257dp"
+            android:layout_marginLeft="317dp"
+            android:layout_marginTop="397dp"
+            android:background="@drawable/selfcult_press" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_selfcult"
+            android:layout_marginLeft="336dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/zizhunianmi" />
+
+        <ImageView
+            android:id="@+id/img_recharge"
+            android:layout_width="257dp"
+            android:layout_height="257dp"
+            android:layout_alignTop="@+id/img_selfcult"
+            android:layout_marginLeft="98dp"
+            android:layout_toRightOf="@+id/img_selfcult"
+            android:background="@drawable/recharge_press" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_selfcult"
+            android:layout_marginLeft="684dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/chaxun" />
+
+        <ImageView
+            android:id="@+id/img_rice_take"
+            android:layout_width="257dp"
+            android:layout_height="257dp"
+            android:layout_alignTop="@+id/img_selfcult"
+            android:layout_marginLeft="98dp"
+            android:layout_toRightOf="@+id/img_recharge"
+            android:background="@drawable/rice_take_press" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_selfcult"
+            android:layout_marginLeft="1042dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/qumi" />
+
+        <ImageView
+            android:id="@+id/img_help"
+            android:layout_width="257dp"
+            android:layout_height="257dp"
+            android:layout_alignTop="@+id/img_selfcult"
+            android:layout_marginLeft="98dp"
+            android:layout_toRightOf="@+id/img_rice_take"
+            android:background="@drawable/help_press" />
+        />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_selfcult"
+            android:layout_marginLeft="1448dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/bangzhu" />
+    </RelativeLayout>
+</layout>

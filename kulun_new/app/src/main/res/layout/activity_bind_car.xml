@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data></data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/transparent">
+
+            <TextView
+                android:id="@+id/tv_back"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/back"
+                android:textColor="@color/text_white" />
+
+            <TextView
+                android:id="@+id/tv_jump"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="跳过"
+                android:textColor="@color/text_white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="绑定车辆"
+                android:textColor="@color/text_white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:padding="20dp"
+            android:text="请确认车牌号输入正确，否则相关费用无法见面"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_carplate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tv2"
+            android:layout_alignLeft="@+id/tv1"
+            android:layout_alignRight="@+id/tv1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edittext_login"
+            android:hint="请输入车牌号"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColor="@color/black" />
+
+
+        <Spinner
+            android:id="@+id/spinner_chejia"
+            style="@style/spinner_carplate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/et_carplate"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_below="@+id/spinner_chejia"
+            android:layout_marginTop="40dp"
+            android:id="@+id/tv_binding_confirm"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_height="45dp"
+            android:background="@drawable/bangdingcheliang"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/text_white"
+            android:textSize="17sp" />
+    </RelativeLayout>
+</layout>

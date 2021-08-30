@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_back" />
+
+    <!--账号-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/space"
+        android:layout_marginRight="@dimen/space"
+        android:layout_marginTop="@dimen/space"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:layout_height="wrap_content"
+            android:text="账号："
+            android:padding="10dp"
+            android:textColor="@color/common_text_color"
+            android:textSize="@dimen/small_text_size"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:layout_weight="4.2"
+            android:layout_marginRight="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/et_account"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/shape_border_light_gray_content_white"
+                android:inputType="number"
+                android:maxLines="1" />
+            <Button
+                android:id="@+id/btn_scan"
+                android:layout_alignRight="@+id/et_account"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="7dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/selector_scan_button"
+                />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_weight="1.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/mini_space"
+            android:text="查询"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_main_blue_button"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="@dimen/space"
+        android:paddingRight="@dimen/space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/small_text_size"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:textColor="@color/common_text_color"
+            android:layout_gravity="left"
+            android:gravity="left"
+            />
+
+        <TextView
+            android:id="@+id/tvBalance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:padding="10dp"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/common_text_color"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/dark_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="时间"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/common_text_color"
+            android:textSize="@dimen/small_text_size"/>
+
+        <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="账号"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/common_text_color"
+        android:textSize="@dimen/small_text_size"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="姓名"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/common_text_color"
+            android:textSize="@dimen/small_text_size"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="金额"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/common_text_color"
+            android:textSize="@dimen/small_text_size"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="方式"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/common_text_color"
+            android:textSize="@dimen/small_text_size"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/dark_gray" />
+
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/recycler_view"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_marginTop="@dimen/mini_gap"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data></data>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/help_details_background"
+    >
+    <include
+        android:id="@+id/center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/center"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gongsijianjie"
+        android:layout_marginLeft="1000dp"
+        android:layout_marginTop="64dp"/>
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1001dp"
+        android:layout_marginTop="258dp"
+        android:src="@drawable/wenzi"
+        />
+    <ImageView
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_marginLeft="1107dp"
+        android:layout_marginTop="750dp"
+        android:id="@+id/xiaochengxu"
+        />
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="1264dp"
+        android:layout_marginTop="741dp"
+        android:id="@+id/gongzhonghao"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1403dp"
+        android:layout_marginTop="782dp"
+        android:src="@drawable/help2"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1524dp"
+        android:layout_marginTop="794dp"
+        android:text="请关注公众平台"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        />
+</RelativeLayout>
+</layout>

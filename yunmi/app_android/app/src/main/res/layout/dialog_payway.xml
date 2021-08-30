@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data></data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="450dp"
+            android:layout_height="578dp"
+            android:background="@drawable/dialog_back"
+            android:layout_centerInParent="true"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="47dp"
+                android:layout_marginTop="39dp"
+                android:text="手机号"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:gravity="center_vertical"
+                />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="351dp"
+                android:layout_height="61dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="96dp"
+                android:background="@drawable/tv_back"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="170dp"
+                android:text="验证码"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:gravity="center_vertical"
+                />
+
+            <TextView
+                android:id="@+id/tv_verificat"
+                android:layout_width="170dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="221dp"
+                android:background="@drawable/tv_back"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:paddingLeft="7dp"
+                />
+
+            <TextView
+                android:layout_width="194dp"
+                android:layout_height="58dp"
+                android:layout_marginLeft="226dp"
+                android:layout_marginTop="225dp"
+                android:gravity="center"
+                android:text="点击获取验证码"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:id="@+id/tv_getsms"
+                android:background="@color/green_getsms"
+                />
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="120dp"
+                android:layout_height="56dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="319dp"
+                android:src="@drawable/text1" />
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="120dp"
+                android:layout_height="56dp"
+                android:layout_alignTop="@id/img1"
+                android:layout_toRightOf="@+id/img1"
+                android:src="@drawable/text2" />
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="120dp"
+                android:layout_height="56dp"
+                android:layout_alignTop="@id/img1"
+                android:layout_toRightOf="@+id/img2"
+                android:src="@drawable/text3" />
+
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="120dp"
+                android:layout_height="56dp"
+                android:layout_below="@+id/img1"
+                android:layout_alignLeft="@id/img1"
+                android:src="@drawable/text4" />
+
+            <ImageView
+                android:id="@+id/img5"
+                android:layout_width="120dp"
+                android:layout_height="56dp"
+                android:layout_alignTop="@id/img4"
+                android:layout_toRightOf="@+id/img4"
+                android:src="@drawable/text5" />
+
+            <ImageView
+                android:id="@+id/img6"
+                android:layout_width="120dp"
+                android:layout_height="56dp"
+                android:layout_alignTop="@id/img4"
+                android:layout_toRightOf="@+id/img5"
+                android:src="@drawable/text6" />
+
+            <ImageView
+                android:id="@+id/img7"
+                android:layout_width="120dp"
+                android:layout_height="56dp"
+                android:layout_below="@+id/img4"
+                android:layout_alignLeft="@id/img1"
+                android:src="@drawable/text7" />
+
+            <ImageView
+                android:id="@+id/img8"
+                android:layout_width="120dp"
+                android:layout_height="56dp"
+                android:layout_alignTop="@id/img7"
+                android:layout_toRightOf="@+id/img7"
+                android:src="@drawable/text8" />
+
+            <ImageView
+                android:id="@+id/img9"
+                android:layout_width="120dp"
+                android:layout_height="56dp"
+                android:layout_alignTop="@id/img7"
+                android:layout_toRightOf="@+id/img8"
+                android:src="@drawable/text9" />
+
+            <ImageView
+                android:id="@+id/img_clear"
+                android:layout_width="120dp"
+                android:layout_height="56dp"
+                android:layout_below="@+id/img7"
+                android:layout_alignLeft="@id/img1"
+                android:src="@drawable/textclear" />
+
+            <ImageView
+                android:id="@+id/img0"
+                android:layout_width="120dp"
+                android:layout_height="56dp"
+                android:layout_alignTop="@id/img_clear"
+                android:layout_toRightOf="@+id/img_clear"
+                android:src="@drawable/text0" />
+
+            <ImageView
+                android:id="@+id/img_confirm"
+                android:layout_width="120dp"
+                android:layout_height="56dp"
+                android:layout_alignTop="@id/img_clear"
+                android:layout_toRightOf="@+id/img0"
+                android:src="@drawable/textconfirm" />
+            <ImageView
+                android:id="@+id/img_phone_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_close"
+                android:layout_marginTop="110dp"
+                android:layout_marginLeft="353dp"
+                android:padding="10dp"
+                />
+            <ImageView
+                android:id="@+id/img_sms_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_close"
+                android:layout_marginTop="235dp"
+                android:layout_marginLeft="161dp"
+                android:padding="10dp"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

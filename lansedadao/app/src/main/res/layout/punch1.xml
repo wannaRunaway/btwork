@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/white_back"
+        android:layout_centerInParent="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请输入换车总里程"
+            android:textColor="@color/black"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/t1"
+            android:textSize="16sp"
+            />
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/t1"
+            android:layout_alignLeft="@+id/t1"
+            android:layout_alignRight="@+id/t1"
+            android:id="@+id/et"
+            android:inputType="number"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="km"
+            android:layout_below="@+id/t1"
+            android:layout_alignRight="@+id/t1"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignLeft="@+id/t1"
+            android:layout_alignRight="@+id/t1"
+            android:layout_below="@+id/et"
+            android:text="确定"
+            android:layout_marginTop="5dp"
+            android:id="@+id/textView"
+            android:gravity="center"
+            android:textColor="@color/text_white"
+            android:background="@color/transparent"
+            />
+    </RelativeLayout>
+</RelativeLayout>

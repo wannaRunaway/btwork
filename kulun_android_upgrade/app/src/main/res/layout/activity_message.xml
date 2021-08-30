@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data></data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <include
+            layout="@layout/layout_header_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/header"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/header"
+            android:id="@+id/action_bar"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            >
+            <TextView
+                android:id="@+id/tv_system"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                style="@style/text14"
+                android:text="系统通知"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/tv_push"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                style="@style/text14"
+                android:text="推送消息"
+                android:gravity="center"
+                />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/re"
+            android:layout_below="@+id/action_bar"
+            />
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,12 @@
+<view class="success-container container">
+    <view class="success-box">
+        <view class="flex-col-v-center">
+            <image src="../../assets/img/img_success.png"/>
+            <view class="success-box-title">温馨提示</view>
+            <view class="success-box-txt">提现申请已提交，请等待审核</view>
+        </view>
+        <view class="operate-box">
+            <view class="btn btn-default" bindtap="goBack">返回</view>
+        </view>
+    </view>
+</view>

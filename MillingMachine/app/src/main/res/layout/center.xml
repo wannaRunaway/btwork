@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data></data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+            <ImageView
+                android:id="@+id/img_top_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="142dp"
+                android:layout_marginTop="107dp"
+                />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="127dp"
+                android:layout_marginRight="155dp"
+                android:text="60s"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/daojishi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/time"
+                android:layout_toLeftOf="@+id/time"
+                android:drawableLeft="@drawable/clock"
+                android:text="倒计时："
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="142dp"
+                android:layout_marginTop="925dp"
+                android:drawableLeft="@drawable/phone"
+                android:text="服务电话：55555555555"
+                android:textColor="@color/blue"
+                android:textSize="52dp"
+                android:textStyle="bold"
+                />
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1576dp"
+                android:layout_marginTop="915dp"
+                android:src="@drawable/back" />
+        </RelativeLayout>
+</layout>

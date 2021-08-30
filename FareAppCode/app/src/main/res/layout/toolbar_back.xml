@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/main_head"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    android:background="@color/main_blue"
+    >
+    <!--android:background="@color/roboy_green_accent"-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/re"
+        >
+        <Button
+            android:id="@+id/btn_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/btn_back_bg"
+            android:drawableStart="@drawable/btn_back_bg"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginStart="-10dp"
+            style="@style/Widget.AppCompat.Button.Borderless" />
+
+        <TextView
+            android:id="@+id/tvMainTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal|center_vertical"
+            android:text=""
+            android:textSize="20sp"
+            android:textColor="@color/white" />
+        <Button
+            android:id="@+id/btn_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:text="提交"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:layout_marginRight="-4dp"
+            android:layout_marginEnd="-4dp"
+            android:background="@drawable/selector_pass_light_gray"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/re"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="客服名称"
+            android:id="@+id/customer_name"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/grape_dark"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/customer_time"
+            android:text="客服时间"
+            android:layout_below="@+id/customer_name"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/grape_dark"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/snow_dark"
+            android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

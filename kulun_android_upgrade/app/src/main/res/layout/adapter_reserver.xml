@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_back"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/re"
+        >
+
+        <TextView
+            android:id="@+id/tv_station"
+            style="@style/text12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:paddingTop="20dp"
+            android:text="长城街站" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text12"
+            android:id="@+id/carplate"
+            android:layout_alignBottom="@+id/tv_station"
+            android:layout_toRightOf="@+id/tv_station"
+            android:layout_marginLeft="25dp"
+            android:text="1wes"
+            />
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/text12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_station"
+            android:layout_alignLeft="@+id/tv_station"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="预约时间" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:text="到达站点"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</LinearLayout>

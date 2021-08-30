@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/main_blue">
+
+            <Button
+                android:id="@+id/btn_left"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="-10dp"
+                android:layout_marginLeft="-10dp"
+                android:drawableStart="@drawable/btn_back_bg"
+                android:drawableLeft="@drawable/btn_back_bg" />
+
+            <TextView
+                android:id="@+id/tvMainTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/header"
+            android:layout_marginTop="3dp"
+            android:background="@color/white"
+            android:id="@+id/line"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/tv_date_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/header"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:text="开始日期"
+                    />
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:id="@+id/start_clear"
+                    android:src="@drawable/search_clear_pressed"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="15sp"
+                    android:padding="5dp"
+                    android:layout_marginTop="2dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/tv_date_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/header"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:text="结束日期"
+                    />
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:id="@+id/end_clear"
+                    android:src="@drawable/search_clear_pressed"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="15sp"
+                    android:padding="5dp"
+                    android:layout_marginTop="2dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/smartRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/line"
+            android:layout_marginTop="2dp">
+
+            <com.scwang.smartrefresh.layout.header.ClassicsHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.scwang.smartrefresh.layout.header.ClassicsHeader>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+            <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.scwang.smartrefresh.layout.footer.ClassicsFooter>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+    </RelativeLayout>
+</layout>

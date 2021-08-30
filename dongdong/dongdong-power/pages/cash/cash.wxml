@@ -1,0 +1,24 @@
+<import src="../../assets/style/toptips/index.wxml" />
+
+<view class="cash-container container">
+    <template is="zan-toptips" data="{{ zanTopTips }}"></template>
+    <view class="cash-form">
+        <view class="form-item flex-row-v-center">
+            <text class="required">姓名</text>
+            <view style="color:#ABABAB">{{userName}}</view>
+        </view>
+        <view class="form-item flex-row-v-center">
+            <text class="required">银行卡</text>
+            <view style="color:#ABABAB">{{bankName}} {{bankNo}}</view>
+        </view>
+        <view class="form-item flex-row-v-center">
+            <text class="required">金额</text>
+            <input class="flex-1" type="digit" maxlength="11" placeholder-style="{'color': '#888888'}" placeholder="请输入金额"
+                    bindinput="bindKeyInput" value="{{amount}}"  />
+        </view>
+        <view class="cash-form-bottom">今日最多可提现：10000元</view>
+    </view>
+    <view class="operate-box">
+        <view class="btn btn-default" bindtap="cash">申请提现</view>
+    </view>
+</view>

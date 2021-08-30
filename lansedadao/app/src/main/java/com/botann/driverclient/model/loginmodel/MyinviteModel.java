@@ -1,0 +1,53 @@
+package com.botann.driverclient.model.loginmodel;
+
+import java.io.Serializable;
+
+/**
+ * created by xuedi on 2019/4/19
+ */
+public class MyinviteModel implements Serializable {
+    /**
+     * {
+     *     "code":0,
+     *     "msg":"成功",
+     *     "content":
+     *     "success":true
+     * }
+     */
+    private int code;
+    private String msg;
+    private boolean success;
+    private MyInviteContent content;
+
+    public int getCode() {
+        return code;
+    }
+
+    public void setCode(int code) {
+        this.code = code;
+    }
+
+    public String getMsg() {
+        return msg;
+    }
+
+    public void setMsg(String msg) {
+        this.msg = msg;
+    }
+
+    public boolean isSuccess() {
+        return success;
+    }
+
+    public void setSuccess(boolean success) {
+        this.success = success;
+    }
+
+    public MyInviteContent getContent() {
+        return content;
+    }
+
+    public void setContent(MyInviteContent content) {
+        this.content = content;
+    }
+}

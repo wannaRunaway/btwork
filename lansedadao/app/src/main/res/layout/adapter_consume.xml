@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:orientation="vertical"
+        android:background="@color/text_white"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_chongdian"
+            />
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="消费类型：充电记录"
+            android:textColor="@android:color/black"
+            android:textSize="14dp" />
+
+
+        <TextView
+            android:id="@+id/order_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_type"
+            android:layout_alignLeft="@id/tv_type"
+            android:maxLines="1"
+            android:text="订单号：2017052310565100000969"
+            android:textColor="@android:color/black"
+            android:textSize="14dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/site_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/order_num"
+            android:layout_alignLeft="@+id/tv_type"
+            android:layout_marginTop="5dp"
+            android:maxLines="1"
+            android:text="西斗门"
+            android:textColor="@android:color/black"
+            android:textSize="14dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/car_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/site_name"
+            android:text="车牌号：苏E19D7R"
+            android:textColor="@android:color/black"
+            android:textSize="14dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignLeft="@+id/tv_type"
+            />
+
+        <TextView
+            android:id="@+id/consume_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/site_name"
+            android:layout_alignBottom="@id/car_brand"
+            android:layout_alignParentRight="true"
+            android:text="2017-03-09 12:18"
+            android:textColor="@color/consume_time"
+            android:textSize="14dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            />
+
+
+        <TextView
+            android:id="@+id/total_miles"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/car_brand"
+            android:background="@drawable/shape_consume_bg"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="总里程：5000km"
+            android:textColor="@color/text_white"
+            android:textSize="14dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignLeft="@id/tv_type"
+            />
+
+
+        <TextView
+            android:id="@+id/refer_miles"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/car_brand"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/shape_consume_bg"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="计费里程：120km"
+            android:textColor="@color/text_white"
+            android:textSize="14dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/fare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/total_miles"
+            android:text="实际支付/优惠券/余额/本月剩余里程  48/20/500/0"
+            android:textColor="@color/text_blue"
+            android:textSize="14dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignLeft="@+id/tv_type"
+            />
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fare"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/shape_evaluate_bg"
+            android:gravity="center"
+            android:text="资费疑问"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="visible"
+            />
+
+        <TextView
+            android:id="@+id/evaluate"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fare"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@+id/question"
+            android:background="@drawable/shape_evaluate_bg"
+            android:gravity="center"
+            android:text="评价"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:visibility="visible"
+            />
+
+        <TextView
+            android:id="@+id/tv_customer"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fare"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@+id/evaluate"
+            android:background="@drawable/shape_evaluate_bg"
+            android:gravity="center"
+            android:text="联系客服"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_chongdian"
+            android:layout_below="@+id/evaluate"
+            android:layout_marginTop="7dp"
+            />
+    </RelativeLayout>
+</RelativeLayout>

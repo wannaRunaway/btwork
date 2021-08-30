@@ -1,0 +1,14 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.QRCodeReaderView"
+4    android:versionCode="1"
+5    android:versionName="2.0.3" >
+6
+7    <uses-sdk
+7-->/Users/xuedi/Desktop/xuediwork/kulun_pad_new/qrcodereaderview/src/main/AndroidManifest.xml:6:3-7:9
+8        android:minSdkVersion="14"
+8-->/Users/xuedi/Desktop/xuediwork/kulun_pad_new/qrcodereaderview/src/main/AndroidManifest.xml:6:3-7:9
+9        android:targetSdkVersion="26" />
+9-->/Users/xuedi/Desktop/xuediwork/kulun_pad_new/qrcodereaderview/src/main/AndroidManifest.xml:6:3-7:9
+10
+11</manifest>

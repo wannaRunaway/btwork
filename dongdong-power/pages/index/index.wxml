@@ -1,0 +1,82 @@
+<view class="home-container container">
+    <view class="home-top flex-col-v-center">
+        <view class="image-box">
+            <image src="../../assets/img/img_company.png"></image>
+        </view>
+        <view class="comany-name">{{information.companyName}}</view>
+        <view class="flex-row-v-center">
+            <text class="left-txt">账户余额：￥{{information.balance}}元</text>
+            <view class="right-btn flex-center" bindtap="goToCash">提现</view>
+        </view>
+        <view class="jump-btn flex-row space-between">
+            <view class="jump-btn-left flex-col-v-center" data-type="1" bindtap="onSwitch">
+                <text>到账记录</text>
+                <view class="line" wx-if="{{isShow}}"></view>
+            </view>
+            <view class="jump-btn-right flex-col-v-center" data-type="2" bindtap="onSwitch">
+                <text>提现记录</text>
+                <view class="line" wx-if="{{!isShow}}"></view>
+            </view>
+        </view>
+        <view class="logout" bindtap="logout"> 登出</view>
+    </view>
+
+    <view class="tong" wx:if="{{isShow}}">
+      <view class="tong-content">
+        <view class="search-btn">
+        <picker mode="date" value="{{searchDate}}" start="2019-06-01" end="{{endDate}}" fields="month" bindchange="bindDateChange" bindcancel="bindcancel">
+          <view class="picker">
+            <text wx:if="{{searchDate}}">{{searchDateStr}}</text>
+            <text wx:else>按月查找</text>
+          </view>
+        </picker>
+         <image class="search-img" src="/assets/img/screen_down@3x.png"/>
+        </view>
+        <view class="search-text"><text wx:if="{{totalAmount>=0}}">合计到账金额：{{totalAmount}}元</text></view>
+      </view>
+    </view>
+
+    <view class="home-list">
+        <scroll-view scroll-y="true" class="account-list" wx-if="{{isShow}}" bindscrolltolower="slideAccountList"lower-threshold="10">
+            <view class="account-list-item" wx:for="{{accountList}}" wx:key="{{index}}" >
+                <view class="list-item flex-row space-between">
+                    <text>{{item.station_name}}</text>
+                    <text>{{item.newCreatetime}}</text>
+                </view>
+                <view class="list-item flex-row space-between">
+                    <text>车牌号</text>
+                    <text>{{item.plate_no}}</text>
+                </view>
+                <view class="list-item flex-row space-between">
+                    <text>到账金额</text>
+                    <text>{{item.value}}元</text>
+                </view>
+            </view>
+            <view  class="tips flex-center">{{accountTips}}</view>
+        </scroll-view>
+
+        <scroll-view  scroll-y="true" class="account-list" wx-if="{{!isShow}}" bindscrolltolower="slideCashList" lower-threshold="10">
+            <view class="account-list-item"wx:for="{{cashList}}" wx:key="{{index}}" >
+                <view class="list-item flex-row space-between">
+                    <text >提现时间</text>
+                    <text>{{item.newCreatetime}}</text>
+                </view>
+                <view class="list-item flex-row space-between">
+                    <text>提现金额</text>
+                    <text>{{item.detail_value}}元</text>
+                </view>
+                <view class="list-item flex-row space-between">
+                    <text>状态</text>
+                    <text class="status-success" wx-if="{{item.status==1}}">已完成</text>
+                    <text class="status-wait" wx-if="{{item.status==0}}">待审核</text>
+                    <text class="status-fail" wx-if="{{item.status==2}}">未通过</text>
+                </view>
+                <!--<view class="list-item flex-row space-between"   wx-if="{{item.status==1}}" >-->
+                    <!--<text>账户余额</text>-->
+                    <!--<text>5000元</text>-->
+                <!--</view>-->
+            </view>
+            <view  class="tips flex-center">{{cashTips}}</view>
+        </scroll-view>
+    </view>
+</view>

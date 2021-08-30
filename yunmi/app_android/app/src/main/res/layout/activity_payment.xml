@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+    <data>
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/pay_mentback"
+        >
+
+        <include
+            android:id="@+id/include_header"
+            layout="@layout/layout_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/include_bottom"
+            layout="@layout/layout_bottomer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+        <include
+            android:id="@+id/include_back"
+            layout="@layout/layout_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="320dp"
+            android:layout_marginTop="290dp"
+            android:src="@drawable/icon_vip" />
+
+        <ImageView
+            android:layout_width="149dp"
+            android:layout_height="29dp"
+            android:layout_marginLeft="345dp"
+            android:layout_marginTop="513dp"
+            android:src="@drawable/text_vip" />
+
+        <ImageView
+            android:layout_width="195dp"
+            android:layout_height="154dp"
+            android:layout_marginLeft="322dp"
+            android:layout_marginTop="592dp"
+            android:src="@drawable/img_payment" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="680dp"
+            android:layout_marginTop="290dp"
+            android:src="@drawable/icon_weichat" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="720dp"
+            android:layout_marginTop="514dp"
+            android:src="@drawable/text_weichat" />
+
+        <ImageView
+            android:id="@+id/img_wx"
+            android:layout_width="149dp"
+            android:layout_height="149dp"
+            android:layout_marginLeft="705dp"
+            android:layout_marginTop="588dp"
+            />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="1040dp"
+            android:layout_marginTop="290dp"
+            android:src="@drawable/icon_alipay" />
+
+        <ImageView
+            android:layout_width="149dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="1065dp"
+            android:layout_marginTop="514dp"
+            android:src="@drawable/text_alipay" />
+
+        <ImageView
+            android:id="@+id/img_ali"
+            android:layout_width="149dp"
+            android:layout_height="149dp"
+            android:layout_marginLeft="1066dp"
+            android:layout_marginTop="588dp" />
+
+        <ImageView
+            android:id="@+id/img_icon_phone"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="1400dp"
+            android:layout_marginTop="290dp"
+            android:src="@drawable/icon_phone_pay" />
+
+        <ImageView
+            android:layout_width="148dp"
+            android:layout_height="29dp"
+            android:layout_marginLeft="1426dp"
+            android:layout_marginTop="513dp"
+            android:src="@drawable/text_phone_pay" />
+
+        <ImageView
+            android:id="@+id/img_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1426dp"
+            android:layout_marginTop="588dp"
+            android:src="@drawable/img_phone_pay" />
+    </RelativeLayout>
+</layout>

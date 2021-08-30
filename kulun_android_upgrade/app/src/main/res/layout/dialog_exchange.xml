@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_exchange"
+        android:orientation="vertical"
+        android:padding="25dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+        <com.kulun.energynet.customizeView.ClearEditText
+            android:id="@+id/et_mile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/et_back"
+            android:gravity="center_vertical"
+            android:hint="请输入车辆总里程(km)"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingLeft="80dp"
+            android:paddingBottom="15dp"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/mile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="车辆总里程"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <com.kulun.energynet.customizeView.ClearEditText
+            android:id="@+id/et_soc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_mile"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/et_back"
+            android:gravity="center_vertical"
+            android:hint="请输入SOC"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingBottom="15dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:paddingLeft="80dp"
+            />
+
+        <TextView
+            android:id="@+id/soc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_mile"
+            android:layout_marginTop="30dp"
+            android:text="SOC"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_soc">
+
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/station_item1"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:id="@+id/confirm"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_textcolor"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

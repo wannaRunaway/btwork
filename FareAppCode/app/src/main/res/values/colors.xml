@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="clear_color">#00000000</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#4caf50</color>
+    <color name="black">#000000</color>
+    <color name="light_blue">#6FAFFC</color>
+    <color name="main_blue">#4f9afc</color>
+    <color name="light_top">#3f77bf</color>
+    <color name="white">#FFFFFF</color>
+    <color name="very_light_gray">#EDEEEF</color>
+    <color name="so_light_gray">#E8EBEF</color>
+    <color name="light_gray">#AAAAAA</color>
+    <color name="dark_gray">#555555</color>
+    <color name="grey">#a9a8a8</color>
+    <color name="common_text_color">@color/black</color>
+
+    <!--<color name="roboy_green_accent">#4caf50</color>-->
+    <color name="roboy_green_accent">@color/main_blue</color>
+
+    <color name="color_accent">@color/roboy_green_accent</color>
+
+
+    <color name="secondary_button_background_color">#D6D7D7</color>
+    <color name="secondary_button_text_color">@color/black</color>
+
+    <color name="primary_button_background_color">@color/color_accent</color>
+    <color name="primary_button_text_color">@color/white</color>
+
+    <color name="login_background_color">#FFFFFF</color>
+    <color name="login_text_color">#000000</color>
+    <color name="login_text_hint_color">#757575</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- grass -->
+    <color name="roboy_green_darker">#0a3e0c</color>
+    <color name="roboy_green_dark">#18641b</color>
+    <color name="roboy_green_primary">#4caf50</color>
+    <color name="roboy_green_light">#91be93</color>
+    <integer-array name="grass">
+        <item>@color/roboy_green_darker</item>
+        <item>@color/roboy_green_dark</item>
+        <item>@color/roboy_green_primary</item>
+        <item>@color/roboy_green_light</item>
+    </integer-array>
+
+    <color name="main_bg">#dbe6d8</color>
+    <color name="red">#d21c1c</color>
+    <color name="cameracar">#e98e6a</color>
+
+    <color name="scan_bg">#7f000000</color>
+    <color name="station_yellow">#fffec0</color>
+    <color name="station_crimson">#ffc3c1</color>
+    <color name="station_purple">#ff7dc1</color>
+    <color name="color_buypackage">#1296db</color>
+    <color name="dark">#ffb2b2b2</color>
+    <color name="background">#FFFFFF</color>
+    <color name="text1">#666666</color>
+    <color name="split_line">#11112233</color>
+    <color name="text2">#666666</color>
+
+</resources>

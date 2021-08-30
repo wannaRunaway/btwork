@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data></data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/account_back">
+
+        <include
+            android:id="@+id/include_header"
+            layout="@layout/layout_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/layout_bottom"
+            layout="@layout/layout_bottomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+        <include
+            android:id="@+id/layout_back"
+            layout="@layout/layout_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="650dp"
+            android:layout_height="450dp"
+            android:layout_marginLeft="635dp"
+            android:layout_marginTop="280dp"
+            android:background="@drawable/account_back_green">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="45sp"
+                android:layout_marginLeft="58dp"
+                android:layout_marginTop="61dp"
+                android:gravity="center_vertical"
+                />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="45sp"
+                android:layout_marginLeft="58dp"
+                android:layout_marginTop="158dp"
+                android:gravity="center_vertical"
+                 />
+
+            <TextView
+                android:id="@+id/tv_balance"
+                android:layout_marginLeft="58dp"
+                android:layout_marginTop="256dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="45sp"
+                android:gravity="center_vertical"
+                />
+
+            <TextView
+                android:id="@+id/tv_discount"
+                android:layout_marginLeft="58dp"
+                android:layout_marginTop="353dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="45sp"
+                android:gravity="center_vertical"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

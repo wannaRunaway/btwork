@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data></data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/connecterror_back">
+
+        <include
+            android:id="@+id/layout_bottom"
+            layout="@layout/layout_bottomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+        <ImageView
+            android:id="@+id/top_icon"
+            android:layout_width="150dp"
+            android:layout_height="131dp"
+            android:layout_marginLeft="49dp" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="860dp"
+            android:layout_marginTop="280dp"
+            android:src="@drawable/connecterror_icon" />
+
+        <ImageView
+            android:layout_width="293dp"
+            android:layout_height="113dp"
+            android:layout_marginLeft="813dp"
+            android:layout_marginTop="540dp"
+            android:src="@drawable/connecterror_text" />
+    </RelativeLayout>
+</layout>

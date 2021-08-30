@@ -1,0 +1,206 @@
+.dialog-mask {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, .5);
+	overflow: hidden;
+	z-index: 1000;
+	color: #fff;
+}
+
+.dialog-holder {
+	width: 100%;
+	overflow: hidden;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 1010;
+	background: #fff;
+	border-radius: 20rpx 20rpx 0 0;
+}
+
+.dialog-holder .top-container {
+	box-shadow: 0 2rpx 0 #EBEBEB;
+	padding: 60rpx 40rpx 40rpx;
+	align-items: stretch;
+}
+
+.dialog-holder .top-container .top-holder {
+	font-size: 28rpx;
+	line-height: 40rpx;
+	color: #43464B;
+}
+
+.dialog-holder .content-holder {
+	padding: 40rpx 32rpx;
+}
+
+.dialog-holder .content-holder .content-item {
+	margin-top: 40rpx;
+}
+
+.dialog-holder .content-holder .content-item:first-child {
+	margin-top: 0;
+}
+
+.dialog-holder .content-holder .content-item .left-box {
+	font-size: 28rpx;
+	line-height: 40rpx;
+	color: #43464B;
+}
+
+.dialog-holder .content-holder .content-item .left-box .num-text {
+	margin-left: 20rpx;
+	color: #90949C;
+}
+
+.dialog-holder .content-holder .content-item .counter-box {
+	border: 2rpx solid #E0E0E0;
+	border-radius: 200rpx;
+	height: 64rpx;
+	overflow: hidden;
+}
+
+.dialog-holder .content-holder .content-item .counter-box .action-btn {
+	width: 90rpx;
+	height: 100%;
+	background: rgb(241, 246, 248);
+}
+
+.dialog-holder .content-holder .content-item .counter-box .action-btn image {
+	width: 32rpx;
+	height: 32rpx;
+}
+
+.dialog-holder .content-holder .content-item .counter-box .action-btn:first-child {
+	border-right: 2rpx solid #E0E0E0;
+}
+
+.dialog-holder .content-holder .content-item .counter-box .action-btn:last-child {
+	border-left: 2rpx solid #E0E0E0;
+}
+
+.dialog-holder .content-holder .content-item .counter-box text {
+	font-size: 36rpx;
+	color: #43464B;
+	width: 90rpx;
+}
+
+.dialog-holder .content-holder .content-item .border-box, .dialog-holder .content-holder .content-item .red-border-box {
+	border: 2rpx solid #E0E0E0;
+	border-radius: 12rpx;
+	font-size: 32rpx;
+	color: #43464B;
+	padding: 0 20rpx 0 30rpx;
+	height: 64rpx;
+	background: #F4F8F9;
+}
+
+.dialog-holder .content-holder .content-item .red-border-box {
+	color: #ffffff;
+	background: #FF5454;
+	margin-left: 10rpx;
+}
+
+.dialog-holder .content-holder .content-item .border-box image {
+	width: 14rpx;
+	height: 8rpx;
+	margin-left: 34rpx;
+}
+
+.dialog-holder .content-holder .content-item .border-box .picker {
+	max-width: 350rpx;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.dialog-holder .content-holder .content-item .text-box {
+	font-size: 28rx;
+	color: #90949C;
+	letter-spacing: 0;
+}
+
+.dialog-holder .content-holder .content-item .text-box .num-text {
+	font-size: 36rpx;
+	color: #FC6936;
+	margin-right: 6rpx;
+}
+
+.dialog-holder .content-holder .content-item .text-box .discount-txt {
+	font-size: 28rpx;
+	color: #90949C;
+	margin-left: 6rpx;
+	margin-right: 4rpx;
+	text-decoration: line-through;
+}
+
+.dialog-holder .content-item-outer-box {
+	border-top: 2rpx solid #ECF0F1;
+	padding-top: 40rpx;
+}
+
+.dialog-holder .operation-box {
+	padding: 60rpx 116rpx;
+}
+
+.dialog-holder .operation-box .btn {
+	background: #FC6936;
+	border-radius: 200rpx;
+	font-size: 32rpx;
+	color: #FFFFFF;
+	height: 92rpx;
+}
+
+@keyframes slidown {
+	from {
+		transform: translateY(0%);
+	}
+	to {
+		transform: translateY(100%);
+	}
+}
+
+.slidown {
+	animation: slidown .2s ease-in both;
+}
+
+@keyframes slidup {
+	from {
+		transform: translateY(100%);
+	}
+	to {
+		transform: translateY(0%);
+	}
+}
+
+.slidup {
+	animation: slidup .2s ease-in both;
+}
+
+.label-holder .label-box {
+	height: 36rpx;
+	border: 2rpx solid #FC6936;
+	border-radius: 8rpx;
+	font-size: 24rpx;
+	color: #FC6936;
+	padding: 0 16rpx;
+	margin-left: 16rpx;
+}
+
+.label-holder .label-box:first-child {
+	margin-left: 0;
+}
+
+.label-holder .label-box.green-label {
+	background: #5AD5C7;
+	border: 2rpx solid #5AD5C7;
+	color: #ffffff;
+}
+
+.label-holder .label-box.brown-label {
+	color: #B8B8B8;
+	border: 2rpx solid #B8B8B8;
+}

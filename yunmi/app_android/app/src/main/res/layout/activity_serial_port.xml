@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data></data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="50dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="去皮"
+            android:textSize="45sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:id="@+id/qupi"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="称重"
+            android:textSize="45sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/qupi"
+            android:id="@+id/chengzhong"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/duka"
+            android:layout_below="@+id/chengzhong"
+            android:text="读卡"
+            android:layout_centerHorizontal="true"
+            android:textSize="45sp"
+            />
+    </RelativeLayout>
+</layout>

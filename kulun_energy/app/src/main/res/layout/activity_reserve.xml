@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/layout_header_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/img_default" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:textColor="#999999"
+                android:text="暂无预约"/>
+        </LinearLayout>
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/smart_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/header"
+            >
+            <com.scwang.smartrefresh.layout.header.ClassicsHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_phone"
+            android:layout_marginTop="20dp"
+            android:id="@+id/re_bottom"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            >
+            <ImageView
+                android:id="@+id/img_yuyue_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@mipmap/station_btn_cancel"
+                android:scaleType="fitXY"
+                />
+            <ImageView
+                android:id="@+id/img_yuyue_delay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@mipmap/station_btn_delay"
+                android:scaleType="fitXY"
+                />
+        </LinearLayout>
+        <!--        <RelativeLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:layout_marginLeft="10dp"-->
+        <!--            android:layout_marginRight="10dp"-->
+        <!--            android:background="@color/white"-->
+        <!--            android:layout_below="@+id/header"-->
+        <!--            android:id="@+id/re"-->
+        <!--            >-->
+        <!--            <TextView-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginTop="20dp"-->
+        <!--                android:text="预约到站倒计时：30分钟29秒"-->
+        <!--                android:textColor="@color/black"-->
+        <!--                android:layout_centerHorizontal="true"-->
+        <!--                android:id="@+id/time"-->
+        <!--                android:textSize="15sp"-->
+        <!--                />-->
+        <!--            <TextView-->
+        <!--                android:id="@+id/station_name"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="西斗门站"-->
+        <!--                android:textSize="14sp"-->
+        <!--                android:textColor="@color/black"-->
+        <!--                android:layout_below="@+id/time"-->
+        <!--                android:layout_marginTop="15dp"-->
+        <!--                android:layout_marginLeft="20dp"-->
+        <!--                />-->
+        <!--            <View-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="1dp"-->
+        <!--                android:layout_alignLeft="@+id/station_name"-->
+        <!--                android:layout_below="@+id/station_name"-->
+        <!--                android:layout_marginTop="10dp"-->
+        <!--                android:id="@+id/lin1"-->
+        <!--                />-->
+        <!--            <TextView-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="车牌号:浙A644CD"-->
+        <!--                android:textColor="@color/black"-->
+        <!--                android:textSize="14sp"-->
+        <!--                android:layout_below="@+id/lin1"-->
+        <!--                android:layout_marginTop="10dp"-->
+        <!--                android:layout_alignLeft="@id/station_name"-->
+        <!--                android:layout_marginBottom="15dp"-->
+        <!--                />-->
+        <!--        </RelativeLayout>-->
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@+id/re"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:layout_marginLeft="10dp"-->
+        <!--            android:layout_marginRight="10dp"-->
+        <!--            android:id="@+id/line"-->
+        <!--            >-->
+        <!--            <ImageView-->
+        <!--                android:id="@+id/img_cancel"-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:src="@mipmap/station_btn_cancel"-->
+        <!--                />-->
+        <!--            <ImageView-->
+        <!--                android:id="@+id/img_delay"-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:src="@mipmap/station_btn_delay"-->
+        <!--                android:layout_marginLeft="11dp"-->
+        <!--                />-->
+        <!--        </LinearLayout>-->
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="查看历史预约记录>"-->
+        <!--            android:id="@+id/tv_history"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:layout_below="@+id/line"-->
+        <!--            android:layout_centerHorizontal="true"-->
+        <!--            />-->
+        <!--        <ImageView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:src="@mipmap/btn_scan"-->
+        <!--            android:layout_alignParentBottom="true"-->
+        <!--            android:scaleType="fitXY"-->
+        <!--            android:id="@+id/img_scan"-->
+        <!--            />-->
+    </RelativeLayout>
+
+    <data></data>
+</layout>

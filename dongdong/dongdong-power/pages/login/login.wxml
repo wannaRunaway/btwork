@@ -1,0 +1,16 @@
+<import src="../../assets/style/toptips/index.wxml" />
+
+<view class="login-container container">
+    <template is="zan-toptips" data="{{ zanTopTips }}"></template>
+    <view class="input-cell phone">
+        <input class="flex-1" type="number" maxlength="11" placeholder-style="{'color': '#ABABAB'}" placeholder="请输入手机号"
+               data-type="phone" bindinput="bindKeyInput" value="{{phone}}" />
+    </view>
+    <view class="input-cell">
+        <input class="flex-1" type="password"  placeholder-style="{'color': '#ABABAB'}" placeholder="请输入密码"
+              data-type="password" bindinput="bindKeyInput"  value="{{password}}" />
+    </view>
+    <view class="operate-box">
+        <view class="btn btn-default" bindtap="login">登录</view>
+    </view>
+</view>

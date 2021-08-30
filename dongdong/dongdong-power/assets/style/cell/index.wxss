@@ -1,0 +1,122 @@
+.tab-cell {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 0 0 1px #f2f2f2;
+  font-size: 24rpx;
+  color: #72767d;
+  padding: 32rpx 52rpx;
+}
+
+.tab-cell-pd-0 {
+  padding: 0 52rpx;
+}
+
+.tab-cell-pd-24 {
+  padding: 24rpx 52rpx;
+}
+
+.tab-cell-pd-38 {
+  padding: 38rpx 52rpx;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.tab-cell .arrow {
+  width: 12rpx;
+  height: 22rpx;
+}
+
+.input-cell {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #fff;
+  font-size: 24rpx;
+  color: #72767d;
+  /*height: 100rpx;*/
+  padding: 0 120rpx;
+}
+
+.inputarea-cell {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 0 0 1px #f2f2f2;
+  font-size: 24rpx;
+  color: #72767d;
+  min-height: 60rpx;
+  padding: 20rpx 50rpx;
+}
+
+.input-cell.waybill-cell {
+  padding-right: 32rpx;
+}
+
+.input-cell text, .inputarea-cell text {
+  width: 168rpx;
+  font-size: 24rpx;
+  color: #72767d;
+}
+
+.input-cell.waybill-cell text {
+  width: 128rpx;
+}
+
+.input-cell.waybill-cell .content {
+  flex: 1;
+}
+
+.input-cell.waybill-cell image {
+  width: 14rpx;
+  height: 24rpx;
+}
+
+.input-cell text.required::after {
+  color: red;
+  position: relative;
+  left: 4rpx;
+  content: "*";
+}
+
+.input-cell .checkbox {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.input-cell .checkbox image {
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.input-cell .address {
+  flex: 1;
+  height: 100%;
+}
+
+.input-cell .vcode-box .btn-send {
+  width: 104rpx;
+  height: 60rpx;
+  border-radius: 4px;
+  line-height: 60rpx;
+  text-align: center;
+  color: #fff;
+}
+
+.input-cell .vcode-box .btn-send.success {
+  background: #02CC75;
+}
+
+.input-cell .vcode-box .btn-send.default {
+  background: #C9CCD3;
+}

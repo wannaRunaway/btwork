@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="120dp"
+        android:background="@mipmap/blue_background"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:layout_centerInParent="true"
+        >
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="全部"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_phone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="换电站"
+            android:textColor="@color/blue_light"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_time"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="换电宝"
+            android:textColor="@color/blue_light"
+            android:textSize="14sp"
+            />
+        />
+    </RelativeLayout>
+</RelativeLayout>

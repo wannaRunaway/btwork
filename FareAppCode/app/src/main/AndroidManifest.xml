@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.botann.charging.pad"
+    android:versionCode="15"
+    android:versionName="1.1.5">
+
+    <uses-sdk android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- pgyer 必选-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 获取网络状态 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 网络通信-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />  <!-- 获取设备信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 获取MAC地址-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 读写sdcard，storage等等 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- 允许程序录制音频 -->
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+
+
+    <!-- 访问互联网权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- 扫描条形码 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!--位置经纬度-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name="com.botann.charing.pad.MainApp"
+        android:allowBackup="true"
+        android:icon="@drawable/sk_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme.NoActionBar">
+        <!-- pgyer 必选-->
+        <meta-data
+            android:name="PGYER_APPID"
+            android:value="@string/pgyer_appid" >
+        </meta-data>
+        <activity
+            android:name="com.botann.charing.pad.activity.Main.MainActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.botann.charing.pad.activity.AppDownloadCode.AppDownloadCodeActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.botann.charing.pad.activity.ExchangeOrders.ExchangeOrdersActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.botann.charing.pad.activity.Pay.PaymentActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.botann.charing.pad.activity.ExchangeBattery.ExchangeBatteryActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.botann.charing.pad.activity.ExchangeRecords.ExchangeRecordActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.botann.charing.pad.activity.PayRecords.PayRecordActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.botann.charing.pad.components.zxing.QRScanActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.botann.charing.pad.activity.Pay.PayQRCodeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.botann.charing.pad.activity.Pay.PayResultActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.botann.charing.pad.activity.ExchangeBattery.ExchangeBatteryInfoConfirmActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.botann.charing.pad.activity.ExchangeBattery.ExchangeBatteryResultActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--<activity android:name="com.botan.activity.Topup.PaymentActivity" />-->
+        <activity android:name="com.botann.charing.pad.activity.Login.LoginActivity" />
+        <activity android:name="com.botann.charing.pad.components.zxing.CommonScanActivity"></activity>
+        <activity
+            android:name="com.botann.charing.pad.activity.caridident.CarIdIdentActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name="com.botann.charing.pad.activity.malfunctionrecord.MalfunctionRepairActivity"/>
+        <activity android:name="com.botann.charing.pad.activity.malfunctionrecord.MalfunctionRecordActivity"/>
+        <activity android:name="com.botann.charing.pad.activity.malfunctionrecord.RepairRecordActivity"/>
+        <activity android:name="com.botann.charing.pad.activity.lighter.BatteryLighterActivity"/>
+        <activity android:name="com.botann.charing.pad.activity.lighter.BatteryLighterInquireActivity"/>
+        <activity android:name="com.botann.charing.pad.activity.lighter.BatteryLighterInquireDetailsActivity"/>
+        <activity android:name="com.botann.charing.pad.activity.packageactivity.PackageActivity"/>
+        <activity android:name="com.botann.charing.pad.activity.packageactivity.PackageInfoActivity"/>
+    </application>
+
+</manifest>

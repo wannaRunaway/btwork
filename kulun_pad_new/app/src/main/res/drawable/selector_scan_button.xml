@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item android:state_pressed="true"-->
+        <!--android:drawableTint="@color/light_gray"-->
+        <!--android:drawable="@drawable/shape_radius3dp_light_gray_border" />-->
+    <item android:state_pressed="true" android:drawable="@drawable/btn_scan_gray">
+
+    </item>
+    <item android:state_enabled="true" android:drawable="@drawable/btn_scan_blue" >
+
+    </item>
+    <item android:state_enabled="false" android:drawable="@drawable/btn_scan_blue">
+    </item>
+</selector>

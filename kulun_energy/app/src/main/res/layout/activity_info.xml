@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@mipmap/icon_close" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_close"
+            android:layout_gravity="center"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="45dp"
+            android:text="个人信息"
+            android:textColor="#333333"
+            android:textSize="28sp" />
+
+
+        <TextView
+            android:id="@+id/tv_confrim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/login_out"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <com.kulun.kulunenergy.customizeView.ClearEditText
+            android:id="@+id/et_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_name"
+            android:layout_alignLeft="@+id/tv_title"
+            android:layout_marginTop="39dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/et_back"
+            android:drawableRight="@drawable/delete_selector"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="请输入身份证号(选填)"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="#999999"></com.kulun.kulunenergy.customizeView.ClearEditText>
+
+        <com.kulun.kulunenergy.customizeView.ClearEditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_alignLeft="@+id/tv_title"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/et_back"
+            android:drawableRight="@drawable/delete_selector"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="请输入姓名"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="#999999"></com.kulun.kulunenergy.customizeView.ClearEditText>
+
+    </RelativeLayout>
+
+    <data></data>
+</layout>
